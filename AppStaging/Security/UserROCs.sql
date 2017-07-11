@@ -1,0 +1,3 @@
+﻿CREATE ROLE [UserROCs]
+    AUTHORIZATION [dbo];
+

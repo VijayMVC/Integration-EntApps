@@ -1,0 +1,3 @@
+﻿CREATE USER [SqlServices] FOR LOGIN [MEDAMERICA\SQLServices]
+    WITH DEFAULT_SCHEMA = [SqlServices];
+

@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [CooperK]
+    AUTHORIZATION [CooperK];
+

@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [BernalA]
+    AUTHORIZATION [BernalA];
+

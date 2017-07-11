@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [TomP]
+    AUTHORIZATION [TomP];
+

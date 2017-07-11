@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [MannT]
+    AUTHORIZATION [MannT];
+

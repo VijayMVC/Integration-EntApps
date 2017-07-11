@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [ViewerNCs]
+    AUTHORIZATION [ViewerNCs];
+

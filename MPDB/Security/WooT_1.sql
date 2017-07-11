@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [WooT]
+    AUTHORIZATION [WooT];
+

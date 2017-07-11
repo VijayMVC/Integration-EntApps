@@ -1,0 +1,3 @@
+﻿CREATE ROLE [ViewerNCs]
+    AUTHORIZATION [dbo];
+

@@ -1,0 +1,3 @@
+﻿CREATE USER [WinzerI] FOR LOGIN [MEDAMERICA\WinzerI]
+    WITH DEFAULT_SCHEMA = [WinzerI];
+

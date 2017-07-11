@@ -1,0 +1,6 @@
+﻿CREATE TABLE [dbo].[cepph] (
+    [Col001] NVARCHAR (255) NULL,
+    [Col002] NVARCHAR (255) NULL,
+    [Col003] NVARCHAR (255) NULL
+);
+

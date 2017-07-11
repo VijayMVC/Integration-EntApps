@@ -1,0 +1,3 @@
+﻿CREATE USER [BrowneJ]
+    WITH DEFAULT_SCHEMA = [BrowneJ];
+

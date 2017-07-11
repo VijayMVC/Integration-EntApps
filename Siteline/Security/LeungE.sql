@@ -1,0 +1,3 @@
+﻿CREATE USER [LeungE] FOR LOGIN [MEDAMERICA\LeungE]
+    WITH DEFAULT_SCHEMA = [LeungE];
+

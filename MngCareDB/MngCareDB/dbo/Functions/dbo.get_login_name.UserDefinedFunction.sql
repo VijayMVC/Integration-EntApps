@@ -1,0 +1,14 @@
+USE [MngCarDB]
+GO
+/****** Object:  UserDefinedFunction [dbo].[get_login_name]    Script Date: 09/08/2016 10:07:04 ******/
+SET ANSI_NULLS OFF
+GO
+SET QUOTED_IDENTIFIER OFF
+GO
+CREATE FUNCTION [dbo].[get_login_name]()
+RETURNS VARCHAR(8)
+AS
+BEGIN
+    RETURN RIGHT(SYSTEM_USER,(LEN(SYSTEM_USER)-CHARINDEX('\',SYSTEM_USER)))
+END
+GO

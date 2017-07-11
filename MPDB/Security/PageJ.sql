@@ -1,0 +1,3 @@
+﻿CREATE USER [PageJ]
+    WITH DEFAULT_SCHEMA = [PageJ];
+

@@ -1,0 +1,3 @@
+﻿CREATE USER [AzerkiC] FOR LOGIN [MEDAMERICA\AzerkiC]
+    WITH DEFAULT_SCHEMA = [AzerkiC];
+

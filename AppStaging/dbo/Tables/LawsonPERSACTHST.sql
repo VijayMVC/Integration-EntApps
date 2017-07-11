@@ -1,0 +1,19 @@
+﻿CREATE TABLE [dbo].[LawsonPERSACTHST] (
+    [COMPANY]       SMALLINT     NOT NULL,
+    [ACTION_CODE]   CHAR (10)    NOT NULL,
+    [EFFECT_DATE]   DATETIME     NOT NULL,
+    [ACTION_NBR]    SMALLINT     NOT NULL,
+    [EMPLOYEE]      INT          NOT NULL,
+    [ANT_END_DATE]  DATETIME     NOT NULL,
+    [REASON_01]     CHAR (10)    NOT NULL,
+    [REASON_02]     CHAR (10)    NOT NULL,
+    [USER_ID]       CHAR (10)    NOT NULL,
+    [DATE_STAMP]    DATETIME     NOT NULL,
+    [ACTION_TYPE]   CHAR (1)     NOT NULL,
+    [OBJ_ID]        DECIMAL (12) NOT NULL,
+    [ERROR_FLAG]    CHAR (1)     NOT NULL,
+    [POS_LEVEL]     SMALLINT     NOT NULL,
+    [L_INDEX]       CHAR (4)     NOT NULL,
+    [L_ATPAH_SS_SW] CHAR (1)     NOT NULL
+);
+

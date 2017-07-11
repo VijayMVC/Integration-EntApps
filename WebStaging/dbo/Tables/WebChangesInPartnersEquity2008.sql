@@ -1,0 +1,28 @@
+﻿CREATE TABLE [dbo].[WebChangesInPartnersEquity2008] (
+    [ID]               INT             IDENTITY (1, 1) NOT NULL,
+    [Clock]            VARCHAR (20)    NULL,
+    [ProviderMasterID] INT             NULL,
+    [PSID]             VARCHAR (10)    NULL,
+    [ProviderName]     VARCHAR (100)   NULL,
+    [Line1]            DECIMAL (10, 4) NULL,
+    [Line2]            DECIMAL (10, 4) NULL,
+    [Line3]            DECIMAL (10, 4) NULL,
+    [Line4]            DECIMAL (10, 4) NULL,
+    [Line5]            DECIMAL (10, 4) NULL,
+    [Line6]            DECIMAL (10, 4) NULL,
+    [Line7]            DECIMAL (10, 4) NULL,
+    [Line8]            DECIMAL (10, 4) NULL,
+    [Line9]            DECIMAL (10, 4) NULL,
+    [Line10]           DECIMAL (10, 4) NULL,
+    [Line11]           DECIMAL (10, 4) NULL,
+    [Line12]           DECIMAL (10, 4) NULL,
+    [Line13]           DECIMAL (10, 4) NULL,
+    [Line13PE]         DECIMAL (10, 4) NULL,
+    [Line14]           DECIMAL (18, 4) NULL,
+    [Line15]           DECIMAL (18, 4) NULL,
+    [Line15PE]         DECIMAL (10, 4) NULL,
+    [Line16]           DECIMAL (18, 4) NULL,
+    [Line17]           DECIMAL (18, 4) NULL,
+    [Line18]           DECIMAL (18, 4) NULL
+);
+

@@ -1,0 +1,23 @@
+﻿CREATE TABLE [dbo].[OBJ_G_MIGRATION] (
+    [G_MIG_C_LOGDATE]         VARCHAR (10)  NULL,
+    [G_MIG_C_DOCNAME]         VARCHAR (200) NULL,
+    [G_MIG_C_STATUS]          VARCHAR (50)  NULL,
+    [G_MIG_C_LOGENTRY]        VARCHAR (100) NULL,
+    [G_MIG_C_SEVERITY]        VARCHAR (10)  NULL,
+    [G_MIG_C_CAUSE]           VARCHAR (150) NULL,
+    [G_MIG_C_SOURCE]          VARCHAR (10)  NULL,
+    [G_MIG_C_TYPE]            VARCHAR (40)  NULL,
+    [G_MIG_C_SUBTYPE]         VARCHAR (40)  NULL,
+    [G_MIG_C_ERRORTEXT]       VARCHAR (200) NULL,
+    [G_MIG_C_FOCUS]           VARCHAR (255) NULL,
+    [G_MIG_C_KEYWORD]         VARCHAR (40)  NULL,
+    [G_MIG_C_RESULT]          VARCHAR (150) NULL,
+    [G_MIG_C_WORKAROUND]      VARCHAR (150) NULL,
+    [G_MIG_C_USER]            VARCHAR (50)  NULL,
+    [G_MIG_C_FOLDER_CATEGORY] VARCHAR (200) NULL,
+    [G_MIG_C_AUTHOR]          VARCHAR (50)  NULL,
+    [G_MIG_C_COMMENT]         VARCHAR (50)  NULL,
+    [G_MIG_C_REP_CUID]        VARCHAR (100) NULL,
+    [G_MIG_C_WID_CUID]        VARCHAR (100) NULL
+);
+

@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ProductVersion>10.50.2500.0</ProductVersion>
+  <SchemaVersion>9.0.1.0</SchemaVersion>
+  <State>$base64$PFNvdXJjZUNvbnRyb2xJbmZvIHhtbG5zOnhzZD0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEiIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhtbG5zOmRkbDI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDAzL2VuZ2luZS8yIiB4bWxuczpkZGwyXzI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDAzL2VuZ2luZS8yLzIiIHhtbG5zOmRkbDEwMF8xMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDA4L2VuZ2luZS8xMDAvMTAwIiB4bWxuczpkZGwyMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEwL2VuZ2luZS8yMDAiIHhtbG5zOmRkbDIwMF8yMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEwL2VuZ2luZS8yMDAvMjAwIiB4bWxuczpkd2Q9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vRGF0YVdhcmVob3VzZS9EZXNpZ25lci8xLjAiPg0KICA8RW5hYmxlZD5mYWxzZTwvRW5hYmxlZD4NCiAgPFByb2plY3ROYW1lPjwvUHJvamVjdE5hbWU+DQogIDxBdXhQYXRoPjwvQXV4UGF0aD4NCiAgPExvY2FsUGF0aD48L0xvY2FsUGF0aD4NCiAgPFByb3ZpZGVyPjwvUHJvdmlkZXI+DQo8L1NvdXJjZUNvbnRyb2xJbmZvPg==</State>
+  <Database>
+    <Name>ConvertedDTSTesting.database</Name>
+    <FullPath>ConvertedDTSTesting.database</FullPath>
+  </Database>
+  <Cubes />
+  <Dimensions />
+  <DataSources />
+  <DataSourceViews />
+  <MiningModels />
+  <Roles />
+  <Miscellaneous />
+  <Configurations>
+    <Configuration>
+      <Name>Development</Name>
+      <Options>
+        <OutputPath>bin</OutputPath>
+        <ConnectionMappings />
+        <ConnectionProviderMappings />
+        <ConnectionSecurityMappings />
+        <DatabaseStorageLocations />
+      </Options>
+    </Configuration>
+  </Configurations>
+  <DTSPackages>
+    <DtsPackage FormatVersion="3">
+      <Name>AppInt - AppInt- Truncate and Load External Soure Data.dtsx</Name>
+      <FullPath>AppInt - AppInt- Truncate and Load External Soure Data.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>AppInt - Lawson - LawsonIDMatch.dtsx</Name>
+      <FullPath>AppInt - Lawson - LawsonIDMatch.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>AppInt - Lawson - LoadStatusToWebForPANPEvaluations.dtsx</Name>
+      <FullPath>AppInt - Lawson - LoadStatusToWebForPANPEvaluations.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>AppInt - LAWSON - Transfer Tables to Prophix.dtsx</Name>
+      <FullPath>AppInt - LAWSON - Transfer Tables to Prophix.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>AppInt - Lawson - TransferPositionsToWeb-NEW.dtsx</Name>
+      <FullPath>AppInt - Lawson - TransferPositionsToWeb-NEW.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>AppInt - Onboard - New Hire Transfer.dtsx</Name>
+      <FullPath>AppInt - Onboard - New Hire Transfer.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>AppInt - PMDB -  Reports - Send Out New Hires and Weekly Changes Dates.dtsx</Name>
+      <FullPath>AppInt - PMDB -  Reports - Send Out New Hires and Weekly Changes Dates.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>AppInt - PMDB - Backup Tables for Main Load.dtsx</Name>
+      <FullPath>AppInt - PMDB - Backup Tables for Main Load.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>AppInt - PMDB - Echo - Web - Echo For Web Portal.dtsx</Name>
+      <FullPath>AppInt - PMDB - Echo - Web - Echo For Web Portal.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>AppInt - PMDB - MARS - Site Tables.dtsx</Name>
+      <FullPath>AppInt - PMDB - MARS - Site Tables.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>AppInt - PMDB - PMDB - Staging to Production.dtsx</Name>
+      <FullPath>AppInt - PMDB - PMDB - Staging to Production.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>AppInt - PMDB - Reports - Exceptions - Mismatched SSN in Lawson and Provider Master.dtsx</Name>
+      <FullPath>AppInt - PMDB - Reports - Exceptions - Mismatched SSN in Lawson and Provider Master.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>AppInt - PMDB - Reports - Send CEPSearch Roles to Helpdesk.dtsx</Name>
+      <FullPath>AppInt - PMDB - Reports - Send CEPSearch Roles to Helpdesk.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>AppInt - PMDB - Reports - Send Credentialing Monthly Reports.dtsx</Name>
+      <FullPath>AppInt - PMDB - Reports - Send Credentialing Monthly Reports.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>AppInt - PMDB - Reports - Send Credentialing Weekly Reports.dtsx</Name>
+      <FullPath>AppInt - PMDB - Reports - Send Credentialing Weekly Reports.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>AppInt - PMDB - Reports - Send New Emails to Helpdesk.dtsx</Name>
+      <FullPath>AppInt - PMDB - Reports - Send New Emails to Helpdesk.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>AppInt - PMDB - Reports - Send PA Employment Category and Date of Hire to A P.dtsx</Name>
+      <FullPath>AppInt - PMDB - Reports - Send PA Employment Category and Date of Hire to A P.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>AppInt - PMDB - Reports - Transfer PMIDs to MARS.dtsx</Name>
+      <FullPath>AppInt - PMDB - Reports - Transfer PMIDs to MARS.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>AppInt - PMDB - Reports - Webcodes to Helpdesk.dtsx</Name>
+      <FullPath>AppInt - PMDB - Reports - Webcodes to Helpdesk.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>AppInt - PMDB - Reports - WebTimecard To Business Objects.dtsx</Name>
+      <FullPath>AppInt - PMDB - Reports - WebTimecard To Business Objects.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>AppInt - PMDB - Siteline - ProviderMaster Table into Siteline.dtsx</Name>
+      <FullPath>AppInt - PMDB - Siteline - ProviderMaster Table into Siteline.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>AppInt - PMDB - Web - PhysicianInfo Download.dtsx</Name>
+      <FullPath>AppInt - PMDB - Web - PhysicianInfo Download.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>AppInt - PMDB - Web - PhysicianTitleInfo Download.dtsx</Name>
+      <FullPath>AppInt - PMDB - Web - PhysicianTitleInfo Download.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>AppInt - PMDB - Web - Site and Region Download.dtsx</Name>
+      <FullPath>AppInt - PMDB - Web - Site and Region Download.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>AppInt - Reports - CEPMismatch.dtsx</Name>
+      <FullPath>AppInt - Reports - CEPMismatch.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>AppInt - Reports - Send Separations to Helpdesk.dtsx</Name>
+      <FullPath>AppInt - Reports - Send Separations to Helpdesk.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>AppInt - Reports - Send Updated Provider Sites To Helpdesk.dtsx</Name>
+      <FullPath>AppInt - Reports - Send Updated Provider Sites To Helpdesk.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>AppInt - Reports - Start Date Mismatch.dtsx</Name>
+      <FullPath>AppInt - Reports - Start Date Mismatch.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>AppInt - SFDC - Update Visit Counts.dtsx</Name>
+      <FullPath>AppInt - SFDC - Update Visit Counts.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>AppInt - SFDC- New Sites from SFDC.dtsx</Name>
+      <FullPath>AppInt - SFDC- New Sites from SFDC.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>AppInt - Siteline - Tables for Qlikview.dtsx</Name>
+      <FullPath>AppInt - Siteline - Tables for Qlikview.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>AppInt - Web - Load CEP Secure Password List.dtsx</Name>
+      <FullPath>AppInt - Web - Load CEP Secure Password List.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>AppInt - Web - ProviderMasterBase 2 Web.dtsx</Name>
+      <FullPath>AppInt - Web - ProviderMasterBase 2 Web.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>AppInt - Web - ProviderMasterUpdate Download from Web.dtsx</Name>
+      <FullPath>AppInt - Web - ProviderMasterUpdate Download from Web.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>AppInt - WebCPACAutoLookupTables.dtsx</Name>
+      <FullPath>AppInt - WebCPACAutoLookupTables.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>AppInt - WebCPACAutoRedFlag.dtsx</Name>
+      <FullPath>AppInt - WebCPACAutoRedFlag.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>Lawson - Dept  Summaries - CEP_OSA_Scribe_Visa ToWeb.dtsx</Name>
+      <FullPath>Lawson - Dept  Summaries - CEP_OSA_Scribe_Visa ToWeb.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>Lawson - Dept  Summaries - CEP_OSA_Scribe_Visa.dtsx</Name>
+      <FullPath>Lawson - Dept  Summaries - CEP_OSA_Scribe_Visa.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>Lawson - Dept  Summaries - CEP_OSA_Scribe_Visa_YearEnd.dtsx</Name>
+      <FullPath>Lawson - Dept  Summaries - CEP_OSA_Scribe_Visa_YearEnd.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>Lawson - Dept  Summaries - MD.dtsx</Name>
+      <FullPath>Lawson - Dept  Summaries - MD.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>Lawson - Dept  Summaries - MDToWeb.dtsx</Name>
+      <FullPath>Lawson - Dept  Summaries - MDToWeb.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>Lawson - Dept  Summaries - PA.dtsx</Name>
+      <FullPath>Lawson - Dept  Summaries - PA.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>Lawson - Dept  Summaries - PA_YearEnd.dtsx</Name>
+      <FullPath>Lawson - Dept  Summaries - PA_YearEnd.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>Lawson - Dept  Summaries - PAToWeb.dtsx</Name>
+      <FullPath>Lawson - Dept  Summaries - PAToWeb.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>Lawson - Duplicate Data Entry Email Applicants Corp.dtsx</Name>
+      <FullPath>Lawson - Duplicate Data Entry Email Applicants Corp.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>Lawson - Duplicate Data Entry Email Applicants.dtsx</Name>
+      <FullPath>Lawson - Duplicate Data Entry Email Applicants.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>Lawson - Duplicate Data Entry PA31_PFI.dtsx</Name>
+      <FullPath>Lawson - Duplicate Data Entry PA31_PFI.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>Lawson - Duplicate Data Entry PA31_PFI_Corp.dtsx</Name>
+      <FullPath>Lawson - Duplicate Data Entry PA31_PFI_Corp.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>Lawson - Duplicate Data Entry PA52_PFI.dtsx</Name>
+      <FullPath>Lawson - Duplicate Data Entry PA52_PFI.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>Lawson - Duplicate Data Entry PA52_PFI_Corp.dtsx</Name>
+      <FullPath>Lawson - Duplicate Data Entry PA52_PFI_Corp.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>Lawson - Report - Organizational Turnover.dtsx</Name>
+      <FullPath>Lawson - Report - Organizational Turnover.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>Lawson - Report - PA Pay History.dtsx</Name>
+      <FullPath>Lawson - Report - PA Pay History.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>Lawson - Report - PA Retention.dtsx</Name>
+      <FullPath>Lawson - Report - PA Retention.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>Lawson - SiteLine GL Interface.dtsx</Name>
+      <FullPath>Lawson - SiteLine GL Interface.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>Lawson - Stipend Pay To Web.dtsx</Name>
+      <FullPath>Lawson - Stipend Pay To Web.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>Lawson - Transfer Tables to Staging.dtsx</Name>
+      <FullPath>Lawson - Transfer Tables to Staging.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>Lawson - YTDEarningStatement - #LoadSourceTables.dtsx</Name>
+      <FullPath>Lawson - YTDEarningStatement - #LoadSourceTables.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>Lawson - YTDEarningStatementMD.dtsx</Name>
+      <FullPath>Lawson - YTDEarningStatementMD.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>Lawson - YTDEarningStatementMDToWeb.dtsx</Name>
+      <FullPath>Lawson - YTDEarningStatementMDToWeb.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>Lawson - YTDEarningStatementPA.dtsx</Name>
+      <FullPath>Lawson - YTDEarningStatementPA.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>Lawson - YTDEarningStatementPA_YearEnd.dtsx</Name>
+      <FullPath>Lawson - YTDEarningStatementPA_YearEnd.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>Lawson - YTDEarningStatementPAToWeb.dtsx</Name>
+      <FullPath>Lawson - YTDEarningStatementPAToWeb.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>SITELINE-Web Refresh Siteline Reports.dtsx</Name>
+      <FullPath>SITELINE-Web Refresh Siteline Reports.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>WebFTPBackup1Monday.dtsx</Name>
+      <FullPath>WebFTPBackup1Monday.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>WebFTPBackup2Tuesday.dtsx</Name>
+      <FullPath>WebFTPBackup2Tuesday.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>WebFTPBackup3Wednesday.dtsx</Name>
+      <FullPath>WebFTPBackup3Wednesday.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>WebFTPBackup4Thursday.dtsx</Name>
+      <FullPath>WebFTPBackup4Thursday.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>WebFTPBackup5Friday.dtsx</Name>
+      <FullPath>WebFTPBackup5Friday.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>WebFTPBackup6Saturday.dtsx</Name>
+      <FullPath>WebFTPBackup6Saturday.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>WebFTPBackup7Sunday.dtsx</Name>
+      <FullPath>WebFTPBackup7Sunday.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>WebSiteLineHourly.dtsx</Name>
+      <FullPath>WebSiteLineHourly.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>WebSiteLineHourlyALLPackages.dtsx</Name>
+      <FullPath>WebSiteLineHourlyALLPackages.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>WebSiteLineHourlyToStaging.dtsx</Name>
+      <FullPath>WebSiteLineHourlyToStaging.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+  </DTSPackages>
+</Project>

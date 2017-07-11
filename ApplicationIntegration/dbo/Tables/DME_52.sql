@@ -1,0 +1,13 @@
+﻿CREATE TABLE [dbo].[DME_52] (
+    [Col0] VARCHAR (500) NOT NULL,
+    [Col1] VARCHAR (500) NULL,
+    [Col2] VARCHAR (500) NULL,
+    [Col3] VARCHAR (500) NULL,
+    [Col4] VARCHAR (500) NULL,
+    [Col5] VARCHAR (500) NULL,
+    [Col6] VARCHAR (500) NULL,
+    [Col7] VARCHAR (500) NULL,
+    [Col8] VARCHAR (500) NULL,
+    [Col9] VARCHAR (500) NULL
+);
+

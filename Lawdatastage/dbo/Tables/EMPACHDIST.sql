@@ -1,0 +1,28 @@
+﻿CREATE TABLE [dbo].[EMPACHDIST] (
+    [COMPANY]        SMALLINT        NOT NULL,
+    [EMPLOYEE]       INT             NOT NULL,
+    [CHECK_ID]       DECIMAL (12)    NOT NULL,
+    [ACH_DIST_NBR]   SMALLINT        NOT NULL,
+    [DIST_AMOUNT]    DECIMAL (13, 2) NOT NULL,
+    [BANK_ACCT_NBR]  CHAR (17)       NOT NULL,
+    [PARTIAL_ACH]    CHAR (1)        NOT NULL,
+    [ACH_BANK]       CHAR (1)        NOT NULL,
+    [CHECK_NBR]      INT             NOT NULL,
+    [STATUS]         TINYINT         NOT NULL,
+    [RECON_DATE]     DATETIME        NOT NULL,
+    [RECON_AMOUNT]   DECIMAL (13, 2) NOT NULL,
+    [RECON_PRT_ST]   TINYINT         NOT NULL,
+    [REVERSAL_ID]    DECIMAL (12)    NOT NULL,
+    [CURRENT_FLAG]   CHAR (1)        NOT NULL,
+    [CURRENCY_CODE]  CHAR (5)        NOT NULL,
+    [CURR_ND]        TINYINT         NOT NULL,
+    [EBANK_ID]       INT             NOT NULL,
+    [EBNK_ACCT_NBR]  CHAR (17)       NOT NULL,
+    [ACCOUNT_TYPE]   CHAR (1)        NOT NULL,
+    [CA_INST_NBR]    SMALLINT        NOT NULL,
+    [CA_TRANSIT_NBR] INT             NOT NULL,
+    [BANK_ROLL_NO]   CHAR (20)       NOT NULL,
+    [ACDSET2_SS_SW]  CHAR (1)        NOT NULL,
+    [ACDSET3_SS_SW]  CHAR (1)        NOT NULL
+);
+

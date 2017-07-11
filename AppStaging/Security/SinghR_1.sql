@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [SinghR]
+    AUTHORIZATION [SinghR];
+

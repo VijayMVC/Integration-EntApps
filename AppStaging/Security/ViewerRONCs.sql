@@ -1,0 +1,3 @@
+﻿CREATE ROLE [ViewerRONCs]
+    AUTHORIZATION [dbo];
+

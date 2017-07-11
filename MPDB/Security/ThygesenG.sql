@@ -1,0 +1,3 @@
+﻿CREATE USER [ThygesenG] FOR LOGIN [MEDAMERICA\ThygesenG]
+    WITH DEFAULT_SCHEMA = [ThygesenG];
+

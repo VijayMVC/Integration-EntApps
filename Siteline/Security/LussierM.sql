@@ -1,0 +1,3 @@
+﻿CREATE USER [LussierM] FOR LOGIN [MEDAMERICA\LussierM]
+    WITH DEFAULT_SCHEMA = [LussierM];
+

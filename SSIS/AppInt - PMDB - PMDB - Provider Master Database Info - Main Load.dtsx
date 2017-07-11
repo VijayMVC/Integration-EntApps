@@ -1,0 +1,501 @@
+<?xml version="1.0"?><DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts" DTS:ExecutableType="SSIS.Package.2">
+<DTS:Property DTS:Name="PackageFormatVersion">3</DTS:Property>
+<DTS:Property DTS:Name="VersionComments"></DTS:Property>
+<DTS:Property DTS:Name="CreatorName">MEDAMERICA\singhr</DTS:Property>
+<DTS:Property DTS:Name="CreatorComputerName">SACDC-SVRDEVAPP</DTS:Property>
+<DTS:Property DTS:Name="CreationDate" DTS:DataType="7">3/16/2015 4:16:21 PM</DTS:Property>
+<DTS:Property DTS:Name="PackageType">0</DTS:Property>
+<DTS:Property DTS:Name="ProtectionLevel">1</DTS:Property>
+<DTS:Property DTS:Name="MaxConcurrentExecutables">-1</DTS:Property>
+<DTS:Property DTS:Name="PackagePriorityClass">0</DTS:Property>
+<DTS:Property DTS:Name="VersionMajor">1</DTS:Property>
+<DTS:Property DTS:Name="VersionMinor">0</DTS:Property>
+<DTS:Property DTS:Name="VersionBuild">0</DTS:Property>
+<DTS:Property DTS:Name="VersionGUID">{07EBBF9F-4230-44B6-829D-E56168B7684C}</DTS:Property>
+<DTS:Property DTS:Name="EnableConfig">0</DTS:Property>
+<DTS:Property DTS:Name="CheckpointFileName"></DTS:Property>
+<DTS:Property DTS:Name="SaveCheckpoints">0</DTS:Property>
+<DTS:Property DTS:Name="CheckpointUsage">0</DTS:Property>
+<DTS:Property DTS:Name="SuppressConfigurationWarnings">0</DTS:Property>
+<DTS:ConnectionManager>
+<DTS:Property DTS:Name="DelayValidation">0</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">ApplicationIntegration</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{09BD2C8D-19E1-44FA-8273-18494DE3BF58}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName">OLEDB</DTS:Property><DTS:ObjectData><DTS:ConnectionManager>
+<DTS:Property DTS:Name="Retain">0</DTS:Property>
+<DTS:Property DTS:Name="ConnectionString">Data Source=SACDC-SVRDEVAPP;Initial Catalog=ApplicationIntegration;Provider=SQLOLEDB;Integrated Security=SSPI;</DTS:Property></DTS:ConnectionManager></DTS:ObjectData></DTS:ConnectionManager>
+<DTS:Property DTS:Name="LastModifiedProductVersion">10.50.2500.0</DTS:Property>
+<DTS:Property DTS:Name="ForceExecValue">0</DTS:Property>
+<DTS:Property DTS:Name="ExecValue" DTS:DataType="3">0</DTS:Property>
+<DTS:Property DTS:Name="ForceExecutionResult">-1</DTS:Property>
+<DTS:Property DTS:Name="Disabled">0</DTS:Property>
+<DTS:Property DTS:Name="FailPackageOnFailure">0</DTS:Property>
+<DTS:Property DTS:Name="FailParentOnFailure">0</DTS:Property>
+<DTS:Property DTS:Name="MaxErrorCount">1</DTS:Property>
+<DTS:Property DTS:Name="ISOLevel">1048576</DTS:Property>
+<DTS:Property DTS:Name="LocaleID">1033</DTS:Property>
+<DTS:Property DTS:Name="TransactionOption">1</DTS:Property>
+<DTS:Property DTS:Name="DelayValidation">0</DTS:Property>
+<DTS:LoggingOptions>
+<DTS:Property DTS:Name="LoggingMode">0</DTS:Property>
+<DTS:Property DTS:Name="FilterKind">1</DTS:Property>
+<DTS:Property DTS:Name="EventFilter" DTS:DataType="8"></DTS:Property></DTS:LoggingOptions>
+<DTS:Executable DTS:ExecutableType="Microsoft.SqlServer.Dts.Tasks.Exec80PackageTask.Exec80PackageTask, Microsoft.SqlServer.Exec80PackageTask, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">
+<DTS:Property DTS:Name="ExecutionLocation">0</DTS:Property>
+<DTS:Property DTS:Name="ExecutionAddress"></DTS:Property>
+<DTS:Property DTS:Name="TaskContact">Execute DTS 2000 Package Task; Microsoft SQL Server 2008 R2; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1</DTS:Property>
+<DTS:Property DTS:Name="ForceExecValue">0</DTS:Property>
+<DTS:Property DTS:Name="ExecValue" DTS:DataType="3">0</DTS:Property>
+<DTS:Property DTS:Name="ForceExecutionResult">-1</DTS:Property>
+<DTS:Property DTS:Name="Disabled">0</DTS:Property>
+<DTS:Property DTS:Name="FailPackageOnFailure">0</DTS:Property>
+<DTS:Property DTS:Name="FailParentOnFailure">0</DTS:Property>
+<DTS:Property DTS:Name="MaxErrorCount">1</DTS:Property>
+<DTS:Property DTS:Name="ISOLevel">1048576</DTS:Property>
+<DTS:Property DTS:Name="LocaleID">-1</DTS:Property>
+<DTS:Property DTS:Name="TransactionOption">1</DTS:Property>
+<DTS:Property DTS:Name="DelayValidation">0</DTS:Property>
+<DTS:LoggingOptions>
+<DTS:Property DTS:Name="LoggingMode">0</DTS:Property>
+<DTS:Property DTS:Name="FilterKind">1</DTS:Property>
+<DTS:Property DTS:Name="EventFilter" DTS:DataType="8"></DTS:Property></DTS:LoggingOptions>
+<DTS:Property DTS:Name="ObjectName">Backup Tables before Load runs</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{B870BB15-E760-4285-B4D8-0C4A8E1019BD}</DTS:Property>
+<DTS:Property DTS:Name="Description">Backup Tables before Load runs</DTS:Property>
+<DTS:Property DTS:Name="CreationName">Microsoft.SqlServer.Dts.Tasks.Exec80PackageTask.Exec80PackageTask, Microsoft.SqlServer.Exec80PackageTask, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91</DTS:Property>
+<DTS:Property DTS:Name="DisableEventHandlers">0</DTS:Property><DTS:ObjectData><Exec80PackageTask:Exec80PackageTaskData Exec80PackageTask:Location="SqlServer" Exec80PackageTask:PackageName="AppInt - PMDB - Backup Tables for Main Load" Exec80PackageTask:PackageID="{678AB5AC-16DF-482D-831A-7DDDD72631FB}" Exec80PackageTask:PackageVersionGUID="" Exec80PackageTask:SQLServer="(local)" Exec80PackageTask:SQLUsername="" Exec80PackageTask:WindowsAuthentication="True" Exec80PackageTask:Filename="" Exec80PackageTask:InnerGlobalVariables="" Exec80PackageTask:OuterGlobalVariables="" xmlns:Exec80PackageTask="www.microsoft.com/sqlserver/dts/tasks/exec80packagetask"><DTS2000Package></DTS2000Package></Exec80PackageTask:Exec80PackageTaskData></DTS:ObjectData></DTS:Executable>
+<DTS:Executable DTS:ExecutableType="Microsoft.SqlServer.Dts.Tasks.Exec80PackageTask.Exec80PackageTask, Microsoft.SqlServer.Exec80PackageTask, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">
+<DTS:Property DTS:Name="ExecutionLocation">0</DTS:Property>
+<DTS:Property DTS:Name="ExecutionAddress"></DTS:Property>
+<DTS:Property DTS:Name="TaskContact">Execute DTS 2000 Package Task; Microsoft SQL Server 2008 R2; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1</DTS:Property>
+<DTS:Property DTS:Name="ForceExecValue">0</DTS:Property>
+<DTS:Property DTS:Name="ExecValue" DTS:DataType="3">0</DTS:Property>
+<DTS:Property DTS:Name="ForceExecutionResult">-1</DTS:Property>
+<DTS:Property DTS:Name="Disabled">0</DTS:Property>
+<DTS:Property DTS:Name="FailPackageOnFailure">0</DTS:Property>
+<DTS:Property DTS:Name="FailParentOnFailure">0</DTS:Property>
+<DTS:Property DTS:Name="MaxErrorCount">1</DTS:Property>
+<DTS:Property DTS:Name="ISOLevel">1048576</DTS:Property>
+<DTS:Property DTS:Name="LocaleID">-1</DTS:Property>
+<DTS:Property DTS:Name="TransactionOption">1</DTS:Property>
+<DTS:Property DTS:Name="DelayValidation">0</DTS:Property>
+<DTS:LoggingOptions>
+<DTS:Property DTS:Name="LoggingMode">0</DTS:Property>
+<DTS:Property DTS:Name="FilterKind">1</DTS:Property>
+<DTS:Property DTS:Name="EventFilter" DTS:DataType="8"></DTS:Property></DTS:LoggingOptions>
+<DTS:Property DTS:Name="ObjectName">Transfer External Source Data</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{6B4A9105-71C9-4B73-9C85-E1A949F10387}</DTS:Property>
+<DTS:Property DTS:Name="Description">Transfer External Source Data</DTS:Property>
+<DTS:Property DTS:Name="CreationName">Microsoft.SqlServer.Dts.Tasks.Exec80PackageTask.Exec80PackageTask, Microsoft.SqlServer.Exec80PackageTask, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91</DTS:Property>
+<DTS:Property DTS:Name="DisableEventHandlers">0</DTS:Property><DTS:ObjectData><Exec80PackageTask:Exec80PackageTaskData Exec80PackageTask:Location="SqlServer" Exec80PackageTask:PackageName="AppInt - AppInt- Truncate and Load External Soure Data" Exec80PackageTask:PackageID="{E35F5843-4D85-442E-B36F-402D531C85EF}" Exec80PackageTask:PackageVersionGUID="" Exec80PackageTask:SQLServer="(local)" Exec80PackageTask:SQLUsername="" Exec80PackageTask:WindowsAuthentication="True" Exec80PackageTask:Filename="" Exec80PackageTask:InnerGlobalVariables="" Exec80PackageTask:OuterGlobalVariables="" xmlns:Exec80PackageTask="www.microsoft.com/sqlserver/dts/tasks/exec80packagetask"><DTS2000Package></DTS2000Package></Exec80PackageTask:Exec80PackageTaskData></DTS:ObjectData></DTS:Executable>
+<DTS:Executable DTS:ExecutableType="Microsoft.SqlServer.Dts.Tasks.Exec80PackageTask.Exec80PackageTask, Microsoft.SqlServer.Exec80PackageTask, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">
+<DTS:Property DTS:Name="ExecutionLocation">0</DTS:Property>
+<DTS:Property DTS:Name="ExecutionAddress"></DTS:Property>
+<DTS:Property DTS:Name="TaskContact">Execute DTS 2000 Package Task; Microsoft SQL Server 2008 R2; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1</DTS:Property>
+<DTS:Property DTS:Name="ForceExecValue">0</DTS:Property>
+<DTS:Property DTS:Name="ExecValue" DTS:DataType="3">0</DTS:Property>
+<DTS:Property DTS:Name="ForceExecutionResult">-1</DTS:Property>
+<DTS:Property DTS:Name="Disabled">0</DTS:Property>
+<DTS:Property DTS:Name="FailPackageOnFailure">0</DTS:Property>
+<DTS:Property DTS:Name="FailParentOnFailure">0</DTS:Property>
+<DTS:Property DTS:Name="MaxErrorCount">1</DTS:Property>
+<DTS:Property DTS:Name="ISOLevel">1048576</DTS:Property>
+<DTS:Property DTS:Name="LocaleID">-1</DTS:Property>
+<DTS:Property DTS:Name="TransactionOption">1</DTS:Property>
+<DTS:Property DTS:Name="DelayValidation">0</DTS:Property>
+<DTS:LoggingOptions>
+<DTS:Property DTS:Name="LoggingMode">0</DTS:Property>
+<DTS:Property DTS:Name="FilterKind">1</DTS:Property>
+<DTS:Property DTS:Name="EventFilter" DTS:DataType="8"></DTS:Property></DTS:LoggingOptions>
+<DTS:Property DTS:Name="ObjectName">Load Updates from Web</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{1CE66113-535F-4955-A7D1-01D1DD2FA4DB}</DTS:Property>
+<DTS:Property DTS:Name="Description">Load Updates from Web</DTS:Property>
+<DTS:Property DTS:Name="CreationName">Microsoft.SqlServer.Dts.Tasks.Exec80PackageTask.Exec80PackageTask, Microsoft.SqlServer.Exec80PackageTask, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91</DTS:Property>
+<DTS:Property DTS:Name="DisableEventHandlers">0</DTS:Property><DTS:ObjectData><Exec80PackageTask:Exec80PackageTaskData Exec80PackageTask:Location="SqlServer" Exec80PackageTask:PackageName="AppInt - Web - ProviderMasterUpdate Download from Web" Exec80PackageTask:PackageID="{616EA79B-2658-4C10-ADF5-CD34EEA0A5D9}" Exec80PackageTask:PackageVersionGUID="{C48EC513-F981-4689-B3B2-7927E17A4C03}" Exec80PackageTask:SQLServer="(local)" Exec80PackageTask:SQLUsername="" Exec80PackageTask:WindowsAuthentication="True" Exec80PackageTask:Filename="" Exec80PackageTask:InnerGlobalVariables="" Exec80PackageTask:OuterGlobalVariables="" xmlns:Exec80PackageTask="www.microsoft.com/sqlserver/dts/tasks/exec80packagetask"><DTS2000Package></DTS2000Package></Exec80PackageTask:Exec80PackageTaskData></DTS:ObjectData></DTS:Executable>
+<DTS:Executable DTS:ExecutableType="Microsoft.SqlServer.Dts.Tasks.Exec80PackageTask.Exec80PackageTask, Microsoft.SqlServer.Exec80PackageTask, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">
+<DTS:Property DTS:Name="ExecutionLocation">0</DTS:Property>
+<DTS:Property DTS:Name="ExecutionAddress"></DTS:Property>
+<DTS:Property DTS:Name="TaskContact">Execute DTS 2000 Package Task; Microsoft SQL Server 2008 R2; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1</DTS:Property>
+<DTS:Property DTS:Name="ForceExecValue">0</DTS:Property>
+<DTS:Property DTS:Name="ExecValue" DTS:DataType="3">0</DTS:Property>
+<DTS:Property DTS:Name="ForceExecutionResult">-1</DTS:Property>
+<DTS:Property DTS:Name="Disabled">0</DTS:Property>
+<DTS:Property DTS:Name="FailPackageOnFailure">0</DTS:Property>
+<DTS:Property DTS:Name="FailParentOnFailure">0</DTS:Property>
+<DTS:Property DTS:Name="MaxErrorCount">1</DTS:Property>
+<DTS:Property DTS:Name="ISOLevel">1048576</DTS:Property>
+<DTS:Property DTS:Name="LocaleID">-1</DTS:Property>
+<DTS:Property DTS:Name="TransactionOption">1</DTS:Property>
+<DTS:Property DTS:Name="DelayValidation">0</DTS:Property>
+<DTS:LoggingOptions>
+<DTS:Property DTS:Name="LoggingMode">0</DTS:Property>
+<DTS:Property DTS:Name="FilterKind">1</DTS:Property>
+<DTS:Property DTS:Name="EventFilter" DTS:DataType="8"></DTS:Property></DTS:LoggingOptions>
+<DTS:Property DTS:Name="ObjectName">Load New Sites from SFDC</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{2F8824B9-8B0F-422C-9ADA-CD2E1780028C}</DTS:Property>
+<DTS:Property DTS:Name="Description">Load New Sites from SFDC</DTS:Property>
+<DTS:Property DTS:Name="CreationName">Microsoft.SqlServer.Dts.Tasks.Exec80PackageTask.Exec80PackageTask, Microsoft.SqlServer.Exec80PackageTask, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91</DTS:Property>
+<DTS:Property DTS:Name="DisableEventHandlers">0</DTS:Property><DTS:ObjectData><Exec80PackageTask:Exec80PackageTaskData Exec80PackageTask:Location="SqlServer" Exec80PackageTask:PackageName="AppInt - SFDC- New Sites from SFDC" Exec80PackageTask:PackageID="{92BD0A3F-622E-49E0-B6D6-9B96282AAE68}" Exec80PackageTask:PackageVersionGUID="" Exec80PackageTask:SQLServer="(local)" Exec80PackageTask:SQLUsername="" Exec80PackageTask:WindowsAuthentication="True" Exec80PackageTask:Filename="" Exec80PackageTask:InnerGlobalVariables="" Exec80PackageTask:OuterGlobalVariables="" xmlns:Exec80PackageTask="www.microsoft.com/sqlserver/dts/tasks/exec80packagetask"><DTS2000Package></DTS2000Package></Exec80PackageTask:Exec80PackageTaskData></DTS:ObjectData></DTS:Executable>
+<DTS:Executable DTS:ExecutableType="Microsoft.SqlServer.Dts.Tasks.Exec80PackageTask.Exec80PackageTask, Microsoft.SqlServer.Exec80PackageTask, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">
+<DTS:Property DTS:Name="ExecutionLocation">0</DTS:Property>
+<DTS:Property DTS:Name="ExecutionAddress"></DTS:Property>
+<DTS:Property DTS:Name="TaskContact">Execute DTS 2000 Package Task; Microsoft SQL Server 2008 R2; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1</DTS:Property>
+<DTS:Property DTS:Name="ForceExecValue">0</DTS:Property>
+<DTS:Property DTS:Name="ExecValue" DTS:DataType="3">0</DTS:Property>
+<DTS:Property DTS:Name="ForceExecutionResult">-1</DTS:Property>
+<DTS:Property DTS:Name="Disabled">0</DTS:Property>
+<DTS:Property DTS:Name="FailPackageOnFailure">0</DTS:Property>
+<DTS:Property DTS:Name="FailParentOnFailure">0</DTS:Property>
+<DTS:Property DTS:Name="MaxErrorCount">1</DTS:Property>
+<DTS:Property DTS:Name="ISOLevel">1048576</DTS:Property>
+<DTS:Property DTS:Name="LocaleID">-1</DTS:Property>
+<DTS:Property DTS:Name="TransactionOption">1</DTS:Property>
+<DTS:Property DTS:Name="DelayValidation">0</DTS:Property>
+<DTS:LoggingOptions>
+<DTS:Property DTS:Name="LoggingMode">0</DTS:Property>
+<DTS:Property DTS:Name="FilterKind">1</DTS:Property>
+<DTS:Property DTS:Name="EventFilter" DTS:DataType="8"></DTS:Property></DTS:LoggingOptions>
+<DTS:Property DTS:Name="ObjectName">Load Updated Records into the Archive Log</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{E4CBA175-7465-41A7-87AC-FC6A5E84E9CD}</DTS:Property>
+<DTS:Property DTS:Name="Description">Load Updated Records into the Archive Log</DTS:Property>
+<DTS:Property DTS:Name="CreationName">Microsoft.SqlServer.Dts.Tasks.Exec80PackageTask.Exec80PackageTask, Microsoft.SqlServer.Exec80PackageTask, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91</DTS:Property>
+<DTS:Property DTS:Name="DisableEventHandlers">0</DTS:Property><DTS:ObjectData><Exec80PackageTask:Exec80PackageTaskData Exec80PackageTask:Location="SqlServer" Exec80PackageTask:PackageName="AppInt - AppInt - ProviderMaster Update Archive" Exec80PackageTask:PackageID="{E15EF5A7-073B-4575-8089-3C3B86CD9EBA}" Exec80PackageTask:PackageVersionGUID="" Exec80PackageTask:SQLServer="(local)" Exec80PackageTask:SQLUsername="" Exec80PackageTask:WindowsAuthentication="True" Exec80PackageTask:Filename="" Exec80PackageTask:InnerGlobalVariables="" Exec80PackageTask:OuterGlobalVariables="" xmlns:Exec80PackageTask="www.microsoft.com/sqlserver/dts/tasks/exec80packagetask"><DTS2000Package></DTS2000Package></Exec80PackageTask:Exec80PackageTaskData></DTS:ObjectData></DTS:Executable>
+<DTS:Executable DTS:ExecutableType="Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">
+<DTS:Property DTS:Name="ExecutionLocation">0</DTS:Property>
+<DTS:Property DTS:Name="ExecutionAddress"></DTS:Property>
+<DTS:Property DTS:Name="TaskContact">Execute SQL Task; Microsoft Corporation; Microsoft SQL Server 2008 R2; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1</DTS:Property>
+<DTS:Property DTS:Name="ForceExecValue">0</DTS:Property>
+<DTS:Property DTS:Name="ExecValue" DTS:DataType="3">0</DTS:Property>
+<DTS:Property DTS:Name="ForceExecutionResult">-1</DTS:Property>
+<DTS:Property DTS:Name="Disabled">0</DTS:Property>
+<DTS:Property DTS:Name="FailPackageOnFailure">0</DTS:Property>
+<DTS:Property DTS:Name="FailParentOnFailure">0</DTS:Property>
+<DTS:Property DTS:Name="MaxErrorCount">1</DTS:Property>
+<DTS:Property DTS:Name="ISOLevel">1048576</DTS:Property>
+<DTS:Property DTS:Name="LocaleID">-1</DTS:Property>
+<DTS:Property DTS:Name="TransactionOption">1</DTS:Property>
+<DTS:Property DTS:Name="DelayValidation">0</DTS:Property>
+<DTS:LoggingOptions>
+<DTS:Property DTS:Name="LoggingMode">0</DTS:Property>
+<DTS:Property DTS:Name="FilterKind">1</DTS:Property>
+<DTS:Property DTS:Name="EventFilter" DTS:DataType="8"></DTS:Property></DTS:LoggingOptions>
+<DTS:Property DTS:Name="ObjectName">Standardizes data and loads new data</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{E72ED2F3-A69E-4B88-9566-2CBB2B0F3780}</DTS:Property>
+<DTS:Property DTS:Name="Description">Standardizes data and loads new data</DTS:Property>
+<DTS:Property DTS:Name="CreationName">Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91</DTS:Property>
+<DTS:Property DTS:Name="DisableEventHandlers">0</DTS:Property><DTS:ObjectData><SQLTask:SqlTaskData SQLTask:Connection="{09BD2C8D-19E1-44FA-8273-18494DE3BF58}" SQLTask:TimeOut="0" SQLTask:IsStoredProc="False" SQLTask:BypassPrepare="True" SQLTask:SqlStmtSourceType="DirectInput" SQLTask:SqlStatementSource="--Updates status of providers that have a completed online app&#xA;&#xA;Exec usp_Onboard_UpdatePMDB_New&#xA;&#xA;&#xA;--Loads New Hires and Separations and updates coming from SFDC&#xA;Exec usp_SFDC_StandardizeColumnsandMainLoad_New&#xA;&#xA;" SQLTask:CodePage="1252" SQLTask:ResultType="ResultSetType_None" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask"/></DTS:ObjectData></DTS:Executable>
+<DTS:Executable DTS:ExecutableType="Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">
+<DTS:Property DTS:Name="ExecutionLocation">0</DTS:Property>
+<DTS:Property DTS:Name="ExecutionAddress"></DTS:Property>
+<DTS:Property DTS:Name="TaskContact">Execute SQL Task; Microsoft Corporation; Microsoft SQL Server 2008 R2; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1</DTS:Property>
+<DTS:Property DTS:Name="ForceExecValue">0</DTS:Property>
+<DTS:Property DTS:Name="ExecValue" DTS:DataType="3">0</DTS:Property>
+<DTS:Property DTS:Name="ForceExecutionResult">-1</DTS:Property>
+<DTS:Property DTS:Name="Disabled">0</DTS:Property>
+<DTS:Property DTS:Name="FailPackageOnFailure">0</DTS:Property>
+<DTS:Property DTS:Name="FailParentOnFailure">0</DTS:Property>
+<DTS:Property DTS:Name="MaxErrorCount">1</DTS:Property>
+<DTS:Property DTS:Name="ISOLevel">1048576</DTS:Property>
+<DTS:Property DTS:Name="LocaleID">-1</DTS:Property>
+<DTS:Property DTS:Name="TransactionOption">1</DTS:Property>
+<DTS:Property DTS:Name="DelayValidation">0</DTS:Property>
+<DTS:LoggingOptions>
+<DTS:Property DTS:Name="LoggingMode">0</DTS:Property>
+<DTS:Property DTS:Name="FilterKind">1</DTS:Property>
+<DTS:Property DTS:Name="EventFilter" DTS:DataType="8"></DTS:Property></DTS:LoggingOptions>
+<DTS:Property DTS:Name="ObjectName">Load ProviderMaster Updates and Info</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{B4625C98-E2FC-458E-9D28-5342B413F022}</DTS:Property>
+<DTS:Property DTS:Name="Description">Load ProviderMaster Updates and Info</DTS:Property>
+<DTS:Property DTS:Name="CreationName">Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91</DTS:Property>
+<DTS:Property DTS:Name="DisableEventHandlers">0</DTS:Property><DTS:ObjectData><SQLTask:SqlTaskData SQLTask:Connection="{09BD2C8D-19E1-44FA-8273-18494DE3BF58}" SQLTask:TimeOut="0" SQLTask:IsStoredProc="False" SQLTask:BypassPrepare="True" SQLTask:SqlStmtSourceType="DirectInput" SQLTask:SqlStatementSource="/*Compare Updates*/&#xA;EXEC usp_CompareProviderMasterUpdateToBase_New&#xA;&#xA;&#xA;/*Load Update Changes*/&#xA;EXEC usp_LoadPMDBUpdateChanges_New&#xA;&#xA;&#xA;/*Load Partners who  have attended New Partner Orientation*/&#xA;EXEC usp_LoadNewPartnerOrientationAttendance" SQLTask:CodePage="1252" SQLTask:ResultType="ResultSetType_None" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask"/></DTS:ObjectData></DTS:Executable>
+<DTS:Executable DTS:ExecutableType="Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">
+<DTS:Property DTS:Name="ExecutionLocation">0</DTS:Property>
+<DTS:Property DTS:Name="ExecutionAddress"></DTS:Property>
+<DTS:Property DTS:Name="TaskContact">Execute SQL Task; Microsoft Corporation; Microsoft SQL Server 2008 R2; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1</DTS:Property>
+<DTS:Property DTS:Name="ForceExecValue">0</DTS:Property>
+<DTS:Property DTS:Name="ExecValue" DTS:DataType="3">0</DTS:Property>
+<DTS:Property DTS:Name="ForceExecutionResult">-1</DTS:Property>
+<DTS:Property DTS:Name="Disabled">0</DTS:Property>
+<DTS:Property DTS:Name="FailPackageOnFailure">0</DTS:Property>
+<DTS:Property DTS:Name="FailParentOnFailure">0</DTS:Property>
+<DTS:Property DTS:Name="MaxErrorCount">1</DTS:Property>
+<DTS:Property DTS:Name="ISOLevel">1048576</DTS:Property>
+<DTS:Property DTS:Name="LocaleID">-1</DTS:Property>
+<DTS:Property DTS:Name="TransactionOption">1</DTS:Property>
+<DTS:Property DTS:Name="DelayValidation">0</DTS:Property>
+<DTS:LoggingOptions>
+<DTS:Property DTS:Name="LoggingMode">0</DTS:Property>
+<DTS:Property DTS:Name="FilterKind">1</DTS:Property>
+<DTS:Property DTS:Name="EventFilter" DTS:DataType="8"></DTS:Property></DTS:LoggingOptions>
+<DTS:Property DTS:Name="ObjectName">Determine Recent SFDC Changes and Update</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{944E65C0-904E-4958-9F7B-7F6036E7C685}</DTS:Property>
+<DTS:Property DTS:Name="Description">Determine Recent SFDC Changes and Update</DTS:Property>
+<DTS:Property DTS:Name="CreationName">Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91</DTS:Property>
+<DTS:Property DTS:Name="DisableEventHandlers">0</DTS:Property><DTS:ObjectData><SQLTask:SqlTaskData SQLTask:Connection="{09BD2C8D-19E1-44FA-8273-18494DE3BF58}" SQLTask:TimeOut="0" SQLTask:IsStoredProc="False" SQLTask:BypassPrepare="True" SQLTask:SqlStmtSourceType="DirectInput" SQLTask:SqlStatementSource="EXEC usp_SFDC_DetermineRecentChanges_New&#xA;" SQLTask:CodePage="1252" SQLTask:ResultType="ResultSetType_None" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask"/></DTS:ObjectData></DTS:Executable>
+<DTS:Executable DTS:ExecutableType="Microsoft.SqlServer.Dts.Tasks.Exec80PackageTask.Exec80PackageTask, Microsoft.SqlServer.Exec80PackageTask, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">
+<DTS:Property DTS:Name="ExecutionLocation">0</DTS:Property>
+<DTS:Property DTS:Name="ExecutionAddress"></DTS:Property>
+<DTS:Property DTS:Name="TaskContact">Execute DTS 2000 Package Task; Microsoft SQL Server 2008 R2; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1</DTS:Property>
+<DTS:Property DTS:Name="ForceExecValue">0</DTS:Property>
+<DTS:Property DTS:Name="ExecValue" DTS:DataType="3">0</DTS:Property>
+<DTS:Property DTS:Name="ForceExecutionResult">-1</DTS:Property>
+<DTS:Property DTS:Name="Disabled">0</DTS:Property>
+<DTS:Property DTS:Name="FailPackageOnFailure">0</DTS:Property>
+<DTS:Property DTS:Name="FailParentOnFailure">0</DTS:Property>
+<DTS:Property DTS:Name="MaxErrorCount">1</DTS:Property>
+<DTS:Property DTS:Name="ISOLevel">1048576</DTS:Property>
+<DTS:Property DTS:Name="LocaleID">-1</DTS:Property>
+<DTS:Property DTS:Name="TransactionOption">1</DTS:Property>
+<DTS:Property DTS:Name="DelayValidation">0</DTS:Property>
+<DTS:LoggingOptions>
+<DTS:Property DTS:Name="LoggingMode">0</DTS:Property>
+<DTS:Property DTS:Name="FilterKind">1</DTS:Property>
+<DTS:Property DTS:Name="EventFilter" DTS:DataType="8"></DTS:Property></DTS:LoggingOptions>
+<DTS:Property DTS:Name="ObjectName">Load Provider Master Base 2 Web</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{FF8C98A1-F422-472D-8DDF-3B2279AE2B50}</DTS:Property>
+<DTS:Property DTS:Name="Description">Load Provider Master Base 2 Web</DTS:Property>
+<DTS:Property DTS:Name="CreationName">Microsoft.SqlServer.Dts.Tasks.Exec80PackageTask.Exec80PackageTask, Microsoft.SqlServer.Exec80PackageTask, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91</DTS:Property>
+<DTS:Property DTS:Name="DisableEventHandlers">0</DTS:Property><DTS:ObjectData><Exec80PackageTask:Exec80PackageTaskData Exec80PackageTask:Location="SqlServer" Exec80PackageTask:PackageName="AppInt - Web - ProviderMasterBase 2 Web" Exec80PackageTask:PackageID="{83EE4A92-262C-48C5-954E-B8AB62BE5D8B}" Exec80PackageTask:PackageVersionGUID="" Exec80PackageTask:SQLServer="(local)" Exec80PackageTask:SQLUsername="" Exec80PackageTask:WindowsAuthentication="True" Exec80PackageTask:Filename="" Exec80PackageTask:InnerGlobalVariables="" Exec80PackageTask:OuterGlobalVariables="" xmlns:Exec80PackageTask="www.microsoft.com/sqlserver/dts/tasks/exec80packagetask"><DTS2000Package></DTS2000Package></Exec80PackageTask:Exec80PackageTaskData></DTS:ObjectData></DTS:Executable>
+<DTS:Executable DTS:ExecutableType="Microsoft.SqlServer.Dts.Tasks.Exec80PackageTask.Exec80PackageTask, Microsoft.SqlServer.Exec80PackageTask, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">
+<DTS:Property DTS:Name="ExecutionLocation">0</DTS:Property>
+<DTS:Property DTS:Name="ExecutionAddress"></DTS:Property>
+<DTS:Property DTS:Name="TaskContact">Execute DTS 2000 Package Task; Microsoft SQL Server 2008 R2; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1</DTS:Property>
+<DTS:Property DTS:Name="ForceExecValue">0</DTS:Property>
+<DTS:Property DTS:Name="ExecValue" DTS:DataType="3">0</DTS:Property>
+<DTS:Property DTS:Name="ForceExecutionResult">-1</DTS:Property>
+<DTS:Property DTS:Name="Disabled">0</DTS:Property>
+<DTS:Property DTS:Name="FailPackageOnFailure">0</DTS:Property>
+<DTS:Property DTS:Name="FailParentOnFailure">0</DTS:Property>
+<DTS:Property DTS:Name="MaxErrorCount">1</DTS:Property>
+<DTS:Property DTS:Name="ISOLevel">1048576</DTS:Property>
+<DTS:Property DTS:Name="LocaleID">-1</DTS:Property>
+<DTS:Property DTS:Name="TransactionOption">1</DTS:Property>
+<DTS:Property DTS:Name="DelayValidation">0</DTS:Property>
+<DTS:LoggingOptions>
+<DTS:Property DTS:Name="LoggingMode">0</DTS:Property>
+<DTS:Property DTS:Name="FilterKind">1</DTS:Property>
+<DTS:Property DTS:Name="EventFilter" DTS:DataType="8"></DTS:Property></DTS:LoggingOptions>
+<DTS:Property DTS:Name="ObjectName">PhysicianInfo Web Download</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{FEA1D183-03A5-4710-A8C5-222A03D2EBB6}</DTS:Property>
+<DTS:Property DTS:Name="Description">PhysicianInfo Web Download</DTS:Property>
+<DTS:Property DTS:Name="CreationName">Microsoft.SqlServer.Dts.Tasks.Exec80PackageTask.Exec80PackageTask, Microsoft.SqlServer.Exec80PackageTask, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91</DTS:Property>
+<DTS:Property DTS:Name="DisableEventHandlers">0</DTS:Property><DTS:ObjectData><Exec80PackageTask:Exec80PackageTaskData Exec80PackageTask:Location="SqlServer" Exec80PackageTask:PackageName="AppInt - PMDB - Web - PhysicianInfo Download" Exec80PackageTask:PackageID="{046AC0DF-ED45-4A8E-B7D7-8D4EB3B749B7}" Exec80PackageTask:PackageVersionGUID="" Exec80PackageTask:SQLServer="(local)" Exec80PackageTask:SQLUsername="" Exec80PackageTask:WindowsAuthentication="True" Exec80PackageTask:Filename="" Exec80PackageTask:InnerGlobalVariables="" Exec80PackageTask:OuterGlobalVariables="" xmlns:Exec80PackageTask="www.microsoft.com/sqlserver/dts/tasks/exec80packagetask"><DTS2000Package></DTS2000Package></Exec80PackageTask:Exec80PackageTaskData></DTS:ObjectData></DTS:Executable>
+<DTS:Executable DTS:ExecutableType="Microsoft.SqlServer.Dts.Tasks.Exec80PackageTask.Exec80PackageTask, Microsoft.SqlServer.Exec80PackageTask, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">
+<DTS:Property DTS:Name="ExecutionLocation">0</DTS:Property>
+<DTS:Property DTS:Name="ExecutionAddress"></DTS:Property>
+<DTS:Property DTS:Name="TaskContact">Execute DTS 2000 Package Task; Microsoft SQL Server 2008 R2; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1</DTS:Property>
+<DTS:Property DTS:Name="ForceExecValue">0</DTS:Property>
+<DTS:Property DTS:Name="ExecValue" DTS:DataType="3">0</DTS:Property>
+<DTS:Property DTS:Name="ForceExecutionResult">-1</DTS:Property>
+<DTS:Property DTS:Name="Disabled">0</DTS:Property>
+<DTS:Property DTS:Name="FailPackageOnFailure">0</DTS:Property>
+<DTS:Property DTS:Name="FailParentOnFailure">0</DTS:Property>
+<DTS:Property DTS:Name="MaxErrorCount">1</DTS:Property>
+<DTS:Property DTS:Name="ISOLevel">1048576</DTS:Property>
+<DTS:Property DTS:Name="LocaleID">-1</DTS:Property>
+<DTS:Property DTS:Name="TransactionOption">1</DTS:Property>
+<DTS:Property DTS:Name="DelayValidation">0</DTS:Property>
+<DTS:LoggingOptions>
+<DTS:Property DTS:Name="LoggingMode">0</DTS:Property>
+<DTS:Property DTS:Name="FilterKind">1</DTS:Property>
+<DTS:Property DTS:Name="EventFilter" DTS:DataType="8"></DTS:Property></DTS:LoggingOptions>
+<DTS:Property DTS:Name="ObjectName">Load SFDC For Web Portal</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{58E5D951-50B0-4CA5-9F12-C0746C5E9F46}</DTS:Property>
+<DTS:Property DTS:Name="Description">Load SFDC For Web Portal</DTS:Property>
+<DTS:Property DTS:Name="CreationName">Microsoft.SqlServer.Dts.Tasks.Exec80PackageTask.Exec80PackageTask, Microsoft.SqlServer.Exec80PackageTask, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91</DTS:Property>
+<DTS:Property DTS:Name="DisableEventHandlers">0</DTS:Property><DTS:ObjectData><Exec80PackageTask:Exec80PackageTaskData Exec80PackageTask:Location="SqlServer" Exec80PackageTask:PackageName="AppInt - PMDB - Echo - Web - Echo For Web Portal" Exec80PackageTask:PackageID="{D322B1A7-64F9-425B-82C9-1FBF004CB226}" Exec80PackageTask:PackageVersionGUID="" Exec80PackageTask:SQLServer="(local)" Exec80PackageTask:SQLUsername="" Exec80PackageTask:WindowsAuthentication="True" Exec80PackageTask:Filename="" Exec80PackageTask:InnerGlobalVariables="" Exec80PackageTask:OuterGlobalVariables="" xmlns:Exec80PackageTask="www.microsoft.com/sqlserver/dts/tasks/exec80packagetask"><DTS2000Package></DTS2000Package></Exec80PackageTask:Exec80PackageTaskData></DTS:ObjectData></DTS:Executable>
+<DTS:Executable DTS:ExecutableType="Microsoft.SqlServer.Dts.Tasks.Exec80PackageTask.Exec80PackageTask, Microsoft.SqlServer.Exec80PackageTask, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">
+<DTS:Property DTS:Name="ExecutionLocation">0</DTS:Property>
+<DTS:Property DTS:Name="ExecutionAddress"></DTS:Property>
+<DTS:Property DTS:Name="TaskContact">Execute DTS 2000 Package Task; Microsoft SQL Server 2008 R2; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1</DTS:Property>
+<DTS:Property DTS:Name="ForceExecValue">0</DTS:Property>
+<DTS:Property DTS:Name="ExecValue" DTS:DataType="3">0</DTS:Property>
+<DTS:Property DTS:Name="ForceExecutionResult">-1</DTS:Property>
+<DTS:Property DTS:Name="Disabled">0</DTS:Property>
+<DTS:Property DTS:Name="FailPackageOnFailure">0</DTS:Property>
+<DTS:Property DTS:Name="FailParentOnFailure">0</DTS:Property>
+<DTS:Property DTS:Name="MaxErrorCount">1</DTS:Property>
+<DTS:Property DTS:Name="ISOLevel">1048576</DTS:Property>
+<DTS:Property DTS:Name="LocaleID">-1</DTS:Property>
+<DTS:Property DTS:Name="TransactionOption">1</DTS:Property>
+<DTS:Property DTS:Name="DelayValidation">0</DTS:Property>
+<DTS:LoggingOptions>
+<DTS:Property DTS:Name="LoggingMode">0</DTS:Property>
+<DTS:Property DTS:Name="FilterKind">1</DTS:Property>
+<DTS:Property DTS:Name="EventFilter" DTS:DataType="8"></DTS:Property></DTS:LoggingOptions>
+<DTS:Property DTS:Name="ObjectName">Transfer from Staging to Production</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{49BDF941-7A91-4F97-A41E-5EE1776A8BBC}</DTS:Property>
+<DTS:Property DTS:Name="Description">Transfer from Staging to Production</DTS:Property>
+<DTS:Property DTS:Name="CreationName">Microsoft.SqlServer.Dts.Tasks.Exec80PackageTask.Exec80PackageTask, Microsoft.SqlServer.Exec80PackageTask, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91</DTS:Property>
+<DTS:Property DTS:Name="DisableEventHandlers">0</DTS:Property><DTS:ObjectData><Exec80PackageTask:Exec80PackageTaskData Exec80PackageTask:Location="SqlServer" Exec80PackageTask:PackageName="AppInt - PMDB - PMDB - Staging to Production" Exec80PackageTask:PackageID="{97E25471-C975-44EA-B55B-D0F547030DC8}" Exec80PackageTask:PackageVersionGUID="" Exec80PackageTask:SQLServer="(local)" Exec80PackageTask:SQLUsername="" Exec80PackageTask:WindowsAuthentication="True" Exec80PackageTask:Filename="" Exec80PackageTask:InnerGlobalVariables="" Exec80PackageTask:OuterGlobalVariables="" xmlns:Exec80PackageTask="www.microsoft.com/sqlserver/dts/tasks/exec80packagetask"><DTS2000Package></DTS2000Package></Exec80PackageTask:Exec80PackageTaskData></DTS:ObjectData></DTS:Executable>
+<DTS:Executable DTS:ExecutableType="Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">
+<DTS:Property DTS:Name="ExecutionLocation">0</DTS:Property>
+<DTS:Property DTS:Name="ExecutionAddress"></DTS:Property>
+<DTS:Property DTS:Name="TaskContact">Execute SQL Task; Microsoft Corporation; Microsoft SQL Server 2008 R2; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1</DTS:Property>
+<DTS:Property DTS:Name="ForceExecValue">0</DTS:Property>
+<DTS:Property DTS:Name="ExecValue" DTS:DataType="3">0</DTS:Property>
+<DTS:Property DTS:Name="ForceExecutionResult">-1</DTS:Property>
+<DTS:Property DTS:Name="Disabled">0</DTS:Property>
+<DTS:Property DTS:Name="FailPackageOnFailure">0</DTS:Property>
+<DTS:Property DTS:Name="FailParentOnFailure">0</DTS:Property>
+<DTS:Property DTS:Name="MaxErrorCount">1</DTS:Property>
+<DTS:Property DTS:Name="ISOLevel">1048576</DTS:Property>
+<DTS:Property DTS:Name="LocaleID">-1</DTS:Property>
+<DTS:Property DTS:Name="TransactionOption">1</DTS:Property>
+<DTS:Property DTS:Name="DelayValidation">0</DTS:Property>
+<DTS:LoggingOptions>
+<DTS:Property DTS:Name="LoggingMode">0</DTS:Property>
+<DTS:Property DTS:Name="FilterKind">1</DTS:Property>
+<DTS:Property DTS:Name="EventFilter" DTS:DataType="8"></DTS:Property></DTS:LoggingOptions>
+<DTS:Property DTS:Name="ObjectName">Update salesforce with latest changes from Web</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{10C95C74-C3C7-48DA-943E-0030FDF20237}</DTS:Property>
+<DTS:Property DTS:Name="Description">Update salesforce with latest changes from Web</DTS:Property>
+<DTS:Property DTS:Name="CreationName">Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91</DTS:Property>
+<DTS:Property DTS:Name="DisableEventHandlers">0</DTS:Property><DTS:ObjectData><SQLTask:SqlTaskData SQLTask:Connection="{09BD2C8D-19E1-44FA-8273-18494DE3BF58}" SQLTask:TimeOut="0" SQLTask:IsStoredProc="False" SQLTask:BypassPrepare="True" SQLTask:SqlStmtSourceType="DirectInput" SQLTask:SqlStatementSource="Exec usp_UpdateSFDC_New" SQLTask:CodePage="1252" SQLTask:ResultType="ResultSetType_None" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask"/></DTS:ObjectData></DTS:Executable>
+<DTS:Executable DTS:ExecutableType="Microsoft.SqlServer.Dts.Tasks.Exec80PackageTask.Exec80PackageTask, Microsoft.SqlServer.Exec80PackageTask, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">
+<DTS:Property DTS:Name="ExecutionLocation">0</DTS:Property>
+<DTS:Property DTS:Name="ExecutionAddress"></DTS:Property>
+<DTS:Property DTS:Name="TaskContact">Execute DTS 2000 Package Task; Microsoft SQL Server 2008 R2; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1</DTS:Property>
+<DTS:Property DTS:Name="ForceExecValue">0</DTS:Property>
+<DTS:Property DTS:Name="ExecValue" DTS:DataType="3">0</DTS:Property>
+<DTS:Property DTS:Name="ForceExecutionResult">-1</DTS:Property>
+<DTS:Property DTS:Name="Disabled">0</DTS:Property>
+<DTS:Property DTS:Name="FailPackageOnFailure">0</DTS:Property>
+<DTS:Property DTS:Name="FailParentOnFailure">0</DTS:Property>
+<DTS:Property DTS:Name="MaxErrorCount">1</DTS:Property>
+<DTS:Property DTS:Name="ISOLevel">1048576</DTS:Property>
+<DTS:Property DTS:Name="LocaleID">-1</DTS:Property>
+<DTS:Property DTS:Name="TransactionOption">1</DTS:Property>
+<DTS:Property DTS:Name="DelayValidation">0</DTS:Property>
+<DTS:LoggingOptions>
+<DTS:Property DTS:Name="LoggingMode">0</DTS:Property>
+<DTS:Property DTS:Name="FilterKind">1</DTS:Property>
+<DTS:Property DTS:Name="EventFilter" DTS:DataType="8"></DTS:Property></DTS:LoggingOptions>
+<DTS:Property DTS:Name="ObjectName">Upload New Hires to Onboarding App</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{B84862E4-9D95-4288-A98E-B8792E5E3BA5}</DTS:Property>
+<DTS:Property DTS:Name="Description">Upload New Hires to Onboarding App</DTS:Property>
+<DTS:Property DTS:Name="CreationName">Microsoft.SqlServer.Dts.Tasks.Exec80PackageTask.Exec80PackageTask, Microsoft.SqlServer.Exec80PackageTask, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91</DTS:Property>
+<DTS:Property DTS:Name="DisableEventHandlers">0</DTS:Property><DTS:ObjectData><Exec80PackageTask:Exec80PackageTaskData Exec80PackageTask:Location="SqlServer" Exec80PackageTask:PackageName="AppInt - Onboard - New Hire Transfer" Exec80PackageTask:PackageID="{B54556AB-9F3C-43F4-9D57-D3D7A75161DF}" Exec80PackageTask:PackageVersionGUID="" Exec80PackageTask:SQLServer="(local)" Exec80PackageTask:SQLUsername="" Exec80PackageTask:WindowsAuthentication="True" Exec80PackageTask:Filename="" Exec80PackageTask:InnerGlobalVariables="" Exec80PackageTask:OuterGlobalVariables="" xmlns:Exec80PackageTask="www.microsoft.com/sqlserver/dts/tasks/exec80packagetask"><DTS2000Package></DTS2000Package></Exec80PackageTask:Exec80PackageTaskData></DTS:ObjectData></DTS:Executable>
+<DTS:PrecedenceConstraint>
+<DTS:Property DTS:Name="Value">0</DTS:Property>
+<DTS:Property DTS:Name="EvalOp">2</DTS:Property>
+<DTS:Property DTS:Name="LogicalAnd">-1</DTS:Property>
+<DTS:Property DTS:Name="Expression"></DTS:Property><DTS:Executable IDREF="{E4CBA175-7465-41A7-87AC-FC6A5E84E9CD}" DTS:IsFrom="-1"/><DTS:Executable IDREF="{E72ED2F3-A69E-4B88-9566-2CBB2B0F3780}" DTS:IsFrom="0"/>
+<DTS:Property DTS:Name="ObjectName">{F739C4D9-819F-4893-872A-673156C7E990}</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{F739C4D9-819F-4893-872A-673156C7E990}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:PrecedenceConstraint>
+<DTS:PrecedenceConstraint>
+<DTS:Property DTS:Name="Value">0</DTS:Property>
+<DTS:Property DTS:Name="EvalOp">2</DTS:Property>
+<DTS:Property DTS:Name="LogicalAnd">-1</DTS:Property>
+<DTS:Property DTS:Name="Expression"></DTS:Property><DTS:Executable IDREF="{2F8824B9-8B0F-422C-9ADA-CD2E1780028C}" DTS:IsFrom="-1"/><DTS:Executable IDREF="{E4CBA175-7465-41A7-87AC-FC6A5E84E9CD}" DTS:IsFrom="0"/>
+<DTS:Property DTS:Name="ObjectName">{F30F75E8-9447-47D1-802F-003E80455058}</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{F30F75E8-9447-47D1-802F-003E80455058}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:PrecedenceConstraint>
+<DTS:PrecedenceConstraint>
+<DTS:Property DTS:Name="Value">0</DTS:Property>
+<DTS:Property DTS:Name="EvalOp">2</DTS:Property>
+<DTS:Property DTS:Name="LogicalAnd">-1</DTS:Property>
+<DTS:Property DTS:Name="Expression"></DTS:Property><DTS:Executable IDREF="{E72ED2F3-A69E-4B88-9566-2CBB2B0F3780}" DTS:IsFrom="-1"/><DTS:Executable IDREF="{B4625C98-E2FC-458E-9D28-5342B413F022}" DTS:IsFrom="0"/>
+<DTS:Property DTS:Name="ObjectName">{9C6BF014-83EE-46EA-BE17-9B78D5C78D3B}</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{9C6BF014-83EE-46EA-BE17-9B78D5C78D3B}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:PrecedenceConstraint>
+<DTS:PrecedenceConstraint>
+<DTS:Property DTS:Name="Value">0</DTS:Property>
+<DTS:Property DTS:Name="EvalOp">2</DTS:Property>
+<DTS:Property DTS:Name="LogicalAnd">-1</DTS:Property>
+<DTS:Property DTS:Name="Expression"></DTS:Property><DTS:Executable IDREF="{6B4A9105-71C9-4B73-9C85-E1A949F10387}" DTS:IsFrom="-1"/><DTS:Executable IDREF="{1CE66113-535F-4955-A7D1-01D1DD2FA4DB}" DTS:IsFrom="0"/>
+<DTS:Property DTS:Name="ObjectName">{B2BED175-1629-492B-A5D5-6D5C2FC4B774}</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{B2BED175-1629-492B-A5D5-6D5C2FC4B774}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:PrecedenceConstraint>
+<DTS:PrecedenceConstraint>
+<DTS:Property DTS:Name="Value">0</DTS:Property>
+<DTS:Property DTS:Name="EvalOp">2</DTS:Property>
+<DTS:Property DTS:Name="LogicalAnd">-1</DTS:Property>
+<DTS:Property DTS:Name="Expression"></DTS:Property><DTS:Executable IDREF="{944E65C0-904E-4958-9F7B-7F6036E7C685}" DTS:IsFrom="-1"/><DTS:Executable IDREF="{FF8C98A1-F422-472D-8DDF-3B2279AE2B50}" DTS:IsFrom="0"/>
+<DTS:Property DTS:Name="ObjectName">{9B6305C0-579C-4C61-BD41-FDDA90BF34CD}</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{9B6305C0-579C-4C61-BD41-FDDA90BF34CD}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:PrecedenceConstraint>
+<DTS:PrecedenceConstraint>
+<DTS:Property DTS:Name="Value">0</DTS:Property>
+<DTS:Property DTS:Name="EvalOp">2</DTS:Property>
+<DTS:Property DTS:Name="LogicalAnd">-1</DTS:Property>
+<DTS:Property DTS:Name="Expression"></DTS:Property><DTS:Executable IDREF="{1CE66113-535F-4955-A7D1-01D1DD2FA4DB}" DTS:IsFrom="-1"/><DTS:Executable IDREF="{2F8824B9-8B0F-422C-9ADA-CD2E1780028C}" DTS:IsFrom="0"/>
+<DTS:Property DTS:Name="ObjectName">{1A98E98C-4F16-4E0B-ABA0-45E725D714DD}</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{1A98E98C-4F16-4E0B-ABA0-45E725D714DD}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:PrecedenceConstraint>
+<DTS:PrecedenceConstraint>
+<DTS:Property DTS:Name="Value">0</DTS:Property>
+<DTS:Property DTS:Name="EvalOp">2</DTS:Property>
+<DTS:Property DTS:Name="LogicalAnd">-1</DTS:Property>
+<DTS:Property DTS:Name="Expression"></DTS:Property><DTS:Executable IDREF="{B4625C98-E2FC-458E-9D28-5342B413F022}" DTS:IsFrom="-1"/><DTS:Executable IDREF="{944E65C0-904E-4958-9F7B-7F6036E7C685}" DTS:IsFrom="0"/>
+<DTS:Property DTS:Name="ObjectName">{639FB4B2-D25E-4868-8A3A-117F17630296}</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{639FB4B2-D25E-4868-8A3A-117F17630296}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:PrecedenceConstraint>
+<DTS:PrecedenceConstraint>
+<DTS:Property DTS:Name="Value">0</DTS:Property>
+<DTS:Property DTS:Name="EvalOp">2</DTS:Property>
+<DTS:Property DTS:Name="LogicalAnd">-1</DTS:Property>
+<DTS:Property DTS:Name="Expression"></DTS:Property><DTS:Executable IDREF="{FF8C98A1-F422-472D-8DDF-3B2279AE2B50}" DTS:IsFrom="-1"/><DTS:Executable IDREF="{FEA1D183-03A5-4710-A8C5-222A03D2EBB6}" DTS:IsFrom="0"/>
+<DTS:Property DTS:Name="ObjectName">{C07FC959-3494-48B2-B05C-417975FA5C48}</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{C07FC959-3494-48B2-B05C-417975FA5C48}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:PrecedenceConstraint>
+<DTS:PrecedenceConstraint>
+<DTS:Property DTS:Name="Value">0</DTS:Property>
+<DTS:Property DTS:Name="EvalOp">2</DTS:Property>
+<DTS:Property DTS:Name="LogicalAnd">-1</DTS:Property>
+<DTS:Property DTS:Name="Expression"></DTS:Property><DTS:Executable IDREF="{B870BB15-E760-4285-B4D8-0C4A8E1019BD}" DTS:IsFrom="-1"/><DTS:Executable IDREF="{6B4A9105-71C9-4B73-9C85-E1A949F10387}" DTS:IsFrom="0"/>
+<DTS:Property DTS:Name="ObjectName">{A90865BF-7F35-45B1-B600-9076EE2C5814}</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{A90865BF-7F35-45B1-B600-9076EE2C5814}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:PrecedenceConstraint>
+<DTS:PrecedenceConstraint>
+<DTS:Property DTS:Name="Value">0</DTS:Property>
+<DTS:Property DTS:Name="EvalOp">2</DTS:Property>
+<DTS:Property DTS:Name="LogicalAnd">-1</DTS:Property>
+<DTS:Property DTS:Name="Expression"></DTS:Property><DTS:Executable IDREF="{FEA1D183-03A5-4710-A8C5-222A03D2EBB6}" DTS:IsFrom="-1"/><DTS:Executable IDREF="{58E5D951-50B0-4CA5-9F12-C0746C5E9F46}" DTS:IsFrom="0"/>
+<DTS:Property DTS:Name="ObjectName">{96D66809-8B97-4148-8F8B-ADC8EFF643FF}</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{96D66809-8B97-4148-8F8B-ADC8EFF643FF}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:PrecedenceConstraint>
+<DTS:PrecedenceConstraint>
+<DTS:Property DTS:Name="Value">0</DTS:Property>
+<DTS:Property DTS:Name="EvalOp">2</DTS:Property>
+<DTS:Property DTS:Name="LogicalAnd">-1</DTS:Property>
+<DTS:Property DTS:Name="Expression"></DTS:Property><DTS:Executable IDREF="{58E5D951-50B0-4CA5-9F12-C0746C5E9F46}" DTS:IsFrom="-1"/><DTS:Executable IDREF="{49BDF941-7A91-4F97-A41E-5EE1776A8BBC}" DTS:IsFrom="0"/>
+<DTS:Property DTS:Name="ObjectName">{5A727EC5-83FA-4005-895B-74DFB1EDAC5F}</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{5A727EC5-83FA-4005-895B-74DFB1EDAC5F}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:PrecedenceConstraint>
+<DTS:PrecedenceConstraint>
+<DTS:Property DTS:Name="Value">0</DTS:Property>
+<DTS:Property DTS:Name="EvalOp">2</DTS:Property>
+<DTS:Property DTS:Name="LogicalAnd">-1</DTS:Property>
+<DTS:Property DTS:Name="Expression"></DTS:Property><DTS:Executable IDREF="{49BDF941-7A91-4F97-A41E-5EE1776A8BBC}" DTS:IsFrom="-1"/><DTS:Executable IDREF="{10C95C74-C3C7-48DA-943E-0030FDF20237}" DTS:IsFrom="0"/>
+<DTS:Property DTS:Name="ObjectName">{293D9775-8594-4A8A-9B38-A7EF5CBE6F70}</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{293D9775-8594-4A8A-9B38-A7EF5CBE6F70}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:PrecedenceConstraint>
+<DTS:PrecedenceConstraint>
+<DTS:Property DTS:Name="Value">0</DTS:Property>
+<DTS:Property DTS:Name="EvalOp">2</DTS:Property>
+<DTS:Property DTS:Name="LogicalAnd">-1</DTS:Property>
+<DTS:Property DTS:Name="Expression"></DTS:Property><DTS:Executable IDREF="{10C95C74-C3C7-48DA-943E-0030FDF20237}" DTS:IsFrom="-1"/><DTS:Executable IDREF="{B84862E4-9D95-4288-A98E-B8792E5E3BA5}" DTS:IsFrom="0"/>
+<DTS:Property DTS:Name="ObjectName">{42DADB66-D7D9-4869-9B06-35DD79B1389E}</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{42DADB66-D7D9-4869-9B06-35DD79B1389E}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:PrecedenceConstraint>
+<DTS:Property DTS:Name="ObjectName">AppInt - PMDB - PMDB - Provider Master Database Info - Main Load</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{8C996C85-2DC3-4677-B663-244BE3DD0089}</DTS:Property>
+<DTS:Property DTS:Name="Description">Daily Transfer into PMDB from Various Sources</DTS:Property>
+<DTS:Property DTS:Name="CreationName">SSIS.Package.2</DTS:Property>
+<DTS:Property DTS:Name="DisableEventHandlers">0</DTS:Property></DTS:Executable>

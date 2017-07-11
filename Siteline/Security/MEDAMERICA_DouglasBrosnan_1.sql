@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [MEDAMERICA\DouglasBrosnan]
+    AUTHORIZATION [MEDAMERICA\DouglasBrosnan];
+

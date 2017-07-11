@@ -1,0 +1,2 @@
+﻿CREATE USER [MEDAMERICA\MukherjeeS] FOR LOGIN [MEDAMERICA\MukherjeeS];
+

@@ -1,0 +1,2 @@
+﻿CREATE USER [MEDAMERICA\CreightonR] FOR LOGIN [MEDAMERICA\CreightonR];
+

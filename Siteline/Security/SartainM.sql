@@ -1,0 +1,3 @@
+﻿CREATE USER [SartainM] FOR LOGIN [MEDAMERICA\SartainM]
+    WITH DEFAULT_SCHEMA = [SartainM];
+

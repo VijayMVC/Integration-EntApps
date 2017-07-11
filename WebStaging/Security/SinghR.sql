@@ -1,0 +1,3 @@
+﻿CREATE USER [SinghR] FOR LOGIN [MEDAMERICA\SinghR]
+    WITH DEFAULT_SCHEMA = [SinghR];
+

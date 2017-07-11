@@ -1,0 +1,3 @@
+﻿CREATE USER [CarlsonN] FOR LOGIN [MEDAMERICA\CarlsonN]
+    WITH DEFAULT_SCHEMA = [CarlsonN];
+

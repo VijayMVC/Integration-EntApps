@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [VanAstroA]
+    AUTHORIZATION [VanAstroA];
+

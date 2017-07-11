@@ -1,0 +1,3 @@
+﻿CREATE USER [Customizer] WITHOUT LOGIN
+    WITH DEFAULT_SCHEMA = [Customizer];
+

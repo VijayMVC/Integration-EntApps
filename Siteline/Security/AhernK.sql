@@ -1,0 +1,3 @@
+﻿CREATE USER [AhernK] FOR LOGIN [MEDAMERICA\AhernK]
+    WITH DEFAULT_SCHEMA = [AhernK];
+

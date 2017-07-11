@@ -1,0 +1,27 @@
+﻿CREATE TABLE [dbo].[WebTimecardSCROSA] (
+    [id]               INT            NOT NULL,
+    [TCID]             CHAR (9)       NOT NULL,
+    [dat]              DATETIME       NOT NULL,
+    [site]             CHAR (10)      NOT NULL,
+    [SiteLocationName] VARCHAR (100)  NULL,
+    [LastName]         VARCHAR (50)   NULL,
+    [FirstName]        VARCHAR (50)   NULL,
+    [role]             CHAR (10)      NOT NULL,
+    [Tin_A]            CHAR (5)       NOT NULL,
+    [Tout_A]           CHAR (5)       NOT NULL,
+    [Tin_P]            CHAR (5)       NOT NULL,
+    [Tout_P]           CHAR (5)       NOT NULL,
+    [Tin_Z]            CHAR (5)       NOT NULL,
+    [Tout_Z]           CHAR (5)       NOT NULL,
+    [HoursTotal]       FLOAT (53)     NOT NULL,
+    [HoursSick]        FLOAT (53)     NOT NULL,
+    [HoursVacation]    FLOAT (53)     NOT NULL,
+    [HoursHoliday]     FLOAT (53)     NOT NULL,
+    [HoursOther]       FLOAT (53)     NOT NULL,
+    [Type]             CHAR (5)       NOT NULL,
+    [HoursMKUP]        FLOAT (53)     NOT NULL,
+    [Notes]            VARCHAR (1000) NOT NULL,
+    [DBonus]           FLOAT (53)     NULL,
+    [NDBonus]          FLOAT (53)     NULL
+);
+

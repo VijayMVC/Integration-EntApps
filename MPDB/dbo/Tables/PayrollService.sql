@@ -1,0 +1,25 @@
+﻿CREATE TABLE [dbo].[PayrollService] (
+    [PrsMagic]     INT           NULL,
+    [PrsFlxIDP1]   INT           NULL,
+    [PrsFlxIDP2]   INT           NULL,
+    [PrsCRC]       INT           NULL,
+    [PrsSource]    INT           NULL,
+    [PrsNote]      INT           NULL,
+    [PrsFlxID]     INT           NOT NULL,
+    [PrsDateAdd]   DATETIME      NULL,
+    [PrsDateMod]   DATETIME      NULL,
+    [PrsDateDel]   DATETIME      NULL,
+    [PrsDateBeg]   DATETIME      NULL,
+    [PrsDateEnd]   DATETIME      NULL,
+    [PrsDateRBeg]  DATETIME      NULL,
+    [PrsDateREnd]  DATETIME      NULL,
+    [PrsUserName]  VARCHAR (20)  NULL,
+    [PrsRecType]   VARCHAR (4)   NULL,
+    [PrsArchive]   VARCHAR (1)   NULL,
+    [PrsID]        VARCHAR (8)   NULL,
+    [PrsSection]   VARCHAR (30)  NULL,
+    [PrsKey]       VARCHAR (30)  NULL,
+    [PrsValue]     VARCHAR (128) NULL,
+    [PrsUpsize_ts] BINARY (8)    NULL
+);
+

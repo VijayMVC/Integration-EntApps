@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [FlemingL]
+    AUTHORIZATION [FlemingL];
+

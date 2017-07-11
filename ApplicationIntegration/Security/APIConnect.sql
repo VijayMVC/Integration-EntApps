@@ -1,0 +1,2 @@
+﻿CREATE USER [APIConnect] WITHOUT LOGIN;
+

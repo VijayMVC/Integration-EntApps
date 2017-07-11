@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [TruongD]
+    AUTHORIZATION [TruongD];
+

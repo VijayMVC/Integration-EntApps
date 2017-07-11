@@ -1,0 +1,3 @@
+﻿CREATE USER [KeysJ] FOR LOGIN [MBSI\keysj]
+    WITH DEFAULT_SCHEMA = [KeysJ];
+

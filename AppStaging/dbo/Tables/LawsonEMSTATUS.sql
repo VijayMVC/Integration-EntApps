@@ -1,0 +1,17 @@
+﻿CREATE TABLE [dbo].[LawsonEMSTATUS] (
+    [COMPANY]        SMALLINT    NOT NULL,
+    [EMP_STATUS]     CHAR (2)    NOT NULL,
+    [DESCRIPTION]    CHAR (30)   NOT NULL,
+    [PAY_STATUS]     CHAR (2)    NOT NULL,
+    [EMP_APP]        TINYINT     NOT NULL,
+    [R_COUNT]        TINYINT     NOT NULL,
+    [ACTIVE_FLAG]    CHAR (1)    NOT NULL,
+    [USER_ID]        CHAR (10)   NOT NULL,
+    [DATE_STAMP]     DATETIME    NOT NULL,
+    [TIME_STAMP]     DECIMAL (6) NOT NULL,
+    [HIPAA_EMP_CODE] CHAR (2)    NOT NULL,
+    [REL_TO_ORG]     CHAR (20)   NOT NULL,
+    [REL_STATUS]     CHAR (20)   NOT NULL,
+    [WORK_TYPE]      CHAR (20)   NOT NULL
+);
+

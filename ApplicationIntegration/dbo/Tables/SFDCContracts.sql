@@ -1,0 +1,26 @@
+﻿CREATE TABLE [dbo].[SFDCContracts] (
+    [SFID]             VARCHAR (18)   NULL,
+    [StaffGroup]       VARCHAR (100)  NULL,
+    [ProviderMasterID] INT            NOT NULL,
+    [WebID]            INT            NULL,
+    [Facility]         VARCHAR (100)  NULL,
+    [PayerType]        VARCHAR (100)  NULL,
+    [PayerName]        VARCHAR (100)  NULL,
+    [Status]           VARCHAR (50)   NULL,
+    [SiteName]         VARCHAR (255)  NULL,
+    [PracticeLocation] VARCHAR (255)  NULL,
+    [FirstWorkedDate]  DATETIME       NULL,
+    [LastWorkedDate]   DATETIME       NULL,
+    [MailedToProvider] DATETIME       NULL,
+    [RecFromProvider]  DATETIME       NULL,
+    [MailedToPayer]    DATETIME       NULL,
+    [PayerRefNo]       VARCHAR (255)  NULL,
+    [IndividualBillNo] VARCHAR (50)   NULL,
+    [GroupBillNo]      VARCHAR (50)   NULL,
+    [FollowUpDate]     DATETIME       NULL,
+    [PESpecialist]     VARCHAR (100)  NULL,
+    [Comments]         VARCHAR (5000) NULL,
+    [CreDate]          DATETIME       NULL,
+    [UpdDate]          DATETIME       NULL
+);
+

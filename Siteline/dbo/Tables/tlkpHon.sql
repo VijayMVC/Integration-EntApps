@@ -1,0 +1,5 @@
+﻿CREATE TABLE [dbo].[tlkpHon] (
+    [HonID] VARCHAR (10) NOT NULL,
+    CONSTRAINT [PK_tlkpHon] PRIMARY KEY NONCLUSTERED ([HonID] ASC) WITH (FILLFACTOR = 90)
+);
+

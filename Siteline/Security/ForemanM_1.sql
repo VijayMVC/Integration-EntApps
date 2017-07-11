@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [ForemanM]
+    AUTHORIZATION [ForemanM];
+

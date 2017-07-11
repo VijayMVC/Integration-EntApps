@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [PageJ]
+    AUTHORIZATION [PageJ];
+

@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [TermsRW]
+    AUTHORIZATION [TermsRW];
+

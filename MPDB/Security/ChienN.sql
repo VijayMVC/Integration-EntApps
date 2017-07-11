@@ -1,0 +1,3 @@
+﻿CREATE USER [ChienN]
+    WITH DEFAULT_SCHEMA = [ChienN];
+

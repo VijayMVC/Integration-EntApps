@@ -1,0 +1,6 @@
+﻿CREATE TABLE [dbo].[DME_31Corp] (
+    [DME1] VARCHAR (5000) NULL,
+    [DME2] VARCHAR (5000) NULL,
+    [DME3] VARCHAR (5000) NULL
+);
+

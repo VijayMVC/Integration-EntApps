@@ -1,0 +1,3 @@
+﻿CREATE USER [KlothT] FOR LOGIN [MEDAMERICA\TedKloth]
+    WITH DEFAULT_SCHEMA = [KlothT];
+

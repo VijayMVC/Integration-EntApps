@@ -1,0 +1,13 @@
+﻿CREATE TABLE [dbo].[OSA_SCRIBES] (
+    [COMPANY-3]    FLOAT (53)     NULL,
+    [NAME-3]       NVARCHAR (255) NULL,
+    [EMPLOYEE]     FLOAT (53)     NULL,
+    [EMP-NAME-3]   NVARCHAR (255) NULL,
+    [ADDR1]        NVARCHAR (255) NULL,
+    [CITY]         NVARCHAR (255) NULL,
+    [STATE]        NVARCHAR (255) NULL,
+    [ZIP]          FLOAT (53)     NULL,
+    [COUNTRY-CODE] NVARCHAR (255) NULL,
+    [FICA-NBR]     NVARCHAR (255) NULL
+);
+

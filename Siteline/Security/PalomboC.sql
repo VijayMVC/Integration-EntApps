@@ -1,0 +1,3 @@
+﻿CREATE USER [PalomboC] FOR LOGIN [MEDAMERICA\PalomboC]
+    WITH DEFAULT_SCHEMA = [PalomboC];
+

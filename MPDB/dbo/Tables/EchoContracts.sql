@@ -1,0 +1,28 @@
+﻿CREATE TABLE [dbo].[EchoContracts] (
+    [EC_ID]                          INT            NOT NULL,
+    [StaffGroup]                     VARCHAR (50)   NULL,
+    [ProviderMasterID]               INT            NOT NULL,
+    [WebID]                          INT            NULL,
+    [Facility]                       VARCHAR (40)   NULL,
+    [InsurancePlanCode]              VARCHAR (6)    NULL,
+    [InsurancePlanName]              VARCHAR (50)   NULL,
+    [SiteName]                       VARCHAR (100)  NULL,
+    [InsurancePlanEffectiveDate]     DATETIME       NULL,
+    [InsurancePlanTerminationDate]   DATETIME       NULL,
+    [InsurancePlanMailtoPhysDate]    DATETIME       NULL,
+    [InsurancePlanSignedDate]        DATETIME       NULL,
+    [InsurancePlanMailedtoInsDate]   DATETIME       NULL,
+    [InsurancePlanComment]           VARCHAR (30)   NULL,
+    [InsurancePlanProviderGroup]     VARCHAR (15)   NULL,
+    [InsurancePlanFacilityCode]      VARCHAR (4)    NULL,
+    [InsurancePlanTerminationReason] VARCHAR (30)   NULL,
+    [InsurancePlanParticipationCode] VARCHAR (5)    NULL,
+    [InsurancePlanPCPorSpecialist]   VARCHAR (1)    NULL,
+    [InsurancePlanIDNumber]          VARCHAR (12)   NULL,
+    [InsurancePlanPinNbr]            VARCHAR (25)   NULL,
+    [InsurancePlanGroupNumber]       VARCHAR (30)   NULL,
+    [InsuranceNotes]                 VARCHAR (5000) NULL,
+    [CreDate]                        DATETIME       NULL,
+    [UpdDate]                        DATETIME       NULL
+);
+

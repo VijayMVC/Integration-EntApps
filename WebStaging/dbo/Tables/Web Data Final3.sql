@@ -1,0 +1,26 @@
+﻿CREATE TABLE [dbo].[Web Data Final3] (
+    [GROUP]         VARCHAR (255) NULL,
+    [LawsonID]      VARCHAR (255) NULL,
+    [MPDBID]        VARCHAR (255) NULL,
+    [Ptnr-TIN]      VARCHAR (255) NULL,
+    [Ptnr-Name]     VARCHAR (255) NULL,
+    [Ptnr-Street1]  VARCHAR (255) NULL,
+    [Ptnr-Street2]  VARCHAR (255) NULL,
+    [Ptnr-City]     VARCHAR (255) NULL,
+    [Ptnr-St]       VARCHAR (255) NULL,
+    [Ptnr-Zip]      VARCHAR (255) NULL,
+    [Pship-TIN]     VARCHAR (255) NULL,
+    [Pship-Name]    VARCHAR (255) NULL,
+    [Pship-Street1] VARCHAR (255) NULL,
+    [Pship-City]    VARCHAR (255) NULL,
+    [Pship-St]      VARCHAR (255) NULL,
+    [Pship-Zip]     VARCHAR (255) NULL,
+    [1]             VARCHAR (255) NULL,
+    [2]             VARCHAR (255) NULL,
+    [3]             VARCHAR (255) NULL,
+    [4]             VARCHAR (255) NULL,
+    [5]             VARCHAR (255) NULL,
+    [6]             VARCHAR (255) NULL,
+    [7]             VARCHAR (255) NULL
+);
+

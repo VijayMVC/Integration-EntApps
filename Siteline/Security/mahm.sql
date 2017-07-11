@@ -1,0 +1,3 @@
+﻿CREATE USER [mahm] FOR LOGIN [MEDAMERICA\MahM]
+    WITH DEFAULT_SCHEMA = [mahm];
+

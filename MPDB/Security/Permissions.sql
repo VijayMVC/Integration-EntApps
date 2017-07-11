@@ -1,0 +1,194 @@
+﻿GRANT CONNECT TO [hurste];
+
+
+GO
+GRANT CONNECT TO [johnsonm];
+
+
+GO
+GRANT CONNECT TO [BOADMIN];
+
+
+GO
+GRANT CONNECT TO [millert];
+
+
+GO
+GRANT CONNECT TO [montgomeryd];
+
+
+GO
+GRANT CONNECT TO [oziert];
+
+
+GO
+GRANT CONNECT TO [rothmanj];
+
+
+GO
+GRANT CONNECT TO [SearF];
+
+
+GO
+GRANT CONNECT TO [templetonn];
+
+
+GO
+GRANT CONNECT TO [carlosg];
+
+
+GO
+GRANT CONNECT TO [Llewellynm];
+
+
+GO
+GRANT CONNECT TO [jagardg];
+
+
+GO
+GRANT CONNECT TO [traceyj];
+
+
+GO
+GRANT CONNECT TO [vaughnd];
+
+
+GO
+GRANT CONNECT TO [williamsond];
+
+
+GO
+GRANT CONNECT TO [woods];
+
+
+GO
+GRANT CONNECT TO [ChienN];
+
+
+GO
+GRANT CONNECT TO [MEDAMERICA\SpearM];
+
+
+GO
+GRANT CONNECT TO [SqlServices];
+
+
+GO
+GRANT CONNECT TO [BrainardE];
+
+
+GO
+GRANT CONNECT TO [Embarcadero];
+
+
+GO
+GRANT CONNECT TO [MEDAMERICA\MunknerJ];
+
+
+GO
+GRANT CONNECT TO [AzerkiC];
+
+
+GO
+GRANT CONNECT TO [VanderVallR];
+
+
+GO
+GRANT CONNECT TO [HsienJ];
+
+
+GO
+GRANT CONNECT TO [BernalA];
+
+
+GO
+GRANT CONNECT TO [MEDAMERICA\RigunayK];
+
+
+GO
+GRANT CONNECT TO [thompsonr];
+
+
+GO
+GRANT CONNECT TO [WinzerI];
+
+
+GO
+GRANT CONNECT TO [GameroO];
+
+
+GO
+GRANT CONNECT TO [PageJ];
+
+
+GO
+GRANT CONNECT TO [MEDAMERICA\KelleyT];
+
+
+GO
+GRANT CONNECT TO [FongD];
+
+
+GO
+GRANT CONNECT TO [WooT];
+
+
+GO
+GRANT CONNECT TO [andersens];
+
+
+GO
+GRANT CONNECT TO [BrowneJ];
+
+
+GO
+GRANT CONNECT TO [BucadL];
+
+
+GO
+GRANT CONNECT TO [LinaJ];
+
+
+GO
+GRANT CONNECT TO [MEDAMERICA\SACDC-SVRBUSOB1$];
+
+
+GO
+GRANT CONNECT TO [MEDAMERICA\CreightonR];
+
+
+GO
+GRANT CONNECT TO [ThygesenG];
+
+
+GO
+GRANT CONNECT TO [NalleA];
+
+
+GO
+GRANT CONNECT TO [Shiehj];
+
+
+GO
+GRANT CONNECT TO [TruongD];
+
+
+GO
+GRANT CONNECT TO [VanAstroA];
+
+
+GO
+GRANT CONNECT TO [JacobsA];
+
+
+GO
+GRANT CONNECT TO [wagnert];
+
+
+GO
+GRANT CONNECT TO [SinghR];
+
+
+GO
+GRANT CONNECT TO [MEDAMERICA\AhernK];
+

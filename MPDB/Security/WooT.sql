@@ -1,0 +1,3 @@
+﻿CREATE USER [WooT]
+    WITH DEFAULT_SCHEMA = [WooT];
+

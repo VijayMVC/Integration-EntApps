@@ -1,0 +1,2 @@
+﻿CREATE USER [LawsonAdmin] WITHOUT LOGIN;
+

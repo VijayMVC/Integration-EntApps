@@ -1,0 +1,27 @@
+﻿CREATE TABLE [dbo].[YTDProviderPerformance] (
+    [ID]                           INT             NULL,
+    [ProviderCode]                 INT             NULL,
+    [Practice]                     VARCHAR (3)     NULL,
+    [ProviderMasterID]             INT             NULL,
+    [NumofVisits]                  INT             NULL,
+    [TotalHours]                   DECIMAL (10, 2) NULL,
+    [PtsPerHour]                   DECIMAL (10, 2) NULL,
+    [AvgChargePerHour]             MONEY           NULL,
+    [AvgChargePerVisit]            MONEY           NULL,
+    [AvgAcuity]                    DECIMAL (10, 2) NULL,
+    [AvgTimetoMD]                  INT             NULL,
+    [OverallSatisfactionWithVisit] DECIMAL (10, 2) NULL,
+    [QtrFlag]                      CHAR (1)        NULL,
+    [YTDFlag]                      CHAR (1)        NULL,
+    [Rolling3MoFlag]               CHAR (1)        NULL,
+    [CEPFlag]                      CHAR (1)        NULL,
+    [ProviderFlag]                 CHAR (1)        NULL,
+    [SiteFlag]                     CHAR (1)        NULL,
+    [PatSatFlag]                   CHAR (1)        NULL,
+    [PatSatFlagMD]                 CHAR (1)        NULL,
+    [WebCode]                      VARCHAR (20)    NULL,
+    [UseFlag]                      VARCHAR (6)     NULL,
+    [SUM1PatSat]                   INT             NULL,
+    [Credate]                      DATETIME        NULL
+);
+

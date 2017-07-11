@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [AhernK]
+    AUTHORIZATION [AhernK];
+

@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [DavidC]
+    AUTHORIZATION [DavidC];
+

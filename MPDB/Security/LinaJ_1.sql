@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [LinaJ]
+    AUTHORIZATION [LinaJ];
+

@@ -1,0 +1,3 @@
+﻿CREATE USER [wagnert] FOR LOGIN [MEDAMERICA\WagnerT]
+    WITH DEFAULT_SCHEMA = [wagnert];
+

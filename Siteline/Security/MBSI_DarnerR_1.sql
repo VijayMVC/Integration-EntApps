@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [MBSI\DarnerR]
+    AUTHORIZATION [MBSI\DarnerR];
+

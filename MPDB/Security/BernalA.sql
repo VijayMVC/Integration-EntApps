@@ -1,0 +1,3 @@
+﻿CREATE USER [BernalA]
+    WITH DEFAULT_SCHEMA = [BernalA];
+

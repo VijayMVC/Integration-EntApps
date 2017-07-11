@@ -1,0 +1,6 @@
+﻿CREATE TABLE [dbo].[tlkpHypLnk] (
+    [HypLnkID]  TINYINT       NOT NULL,
+    [HypLnkPth] VARCHAR (500) NULL,
+    CONSTRAINT [PK_tlkpHypLnk] PRIMARY KEY NONCLUSTERED ([HypLnkID] ASC) WITH (FILLFACTOR = 90)
+);
+

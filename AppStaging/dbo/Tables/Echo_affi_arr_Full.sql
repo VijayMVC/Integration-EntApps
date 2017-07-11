@@ -1,0 +1,27 @@
+﻿CREATE TABLE [dbo].[Echo_affi_arr_Full] (
+    [cd]                   CHAR (5)     NOT NULL,
+    [txt]                  CHAR (25)    NOT NULL,
+    [StaffGroup]           VARCHAR (50) NULL,
+    [ActiveFlag]           CHAR (1)     CONSTRAINT [DF_Echo_affi_arr_Full_Active] DEFAULT ('N') NULL,
+    [WithinStaffGroupFlag] CHAR (1)     CONSTRAINT [DF_Echo_affi_arr_Full_WithinStaffGroupFlag] DEFAULT ('N') NULL,
+    [ListOrder]            INT          NULL,
+    [CreDate]              DATETIME     CONSTRAINT [DF_Echo_affi_arr_Full_CreDate] DEFAULT (getdate()) NULL,
+    [UpdDate]              DATETIME     CONSTRAINT [DF_Echo_affi_arr_Full_UpdDate] DEFAULT (getdate()) NULL,
+    [applet]               CHAR (30)    NULL,
+    [ticlet]               CHAR (30)    NULL,
+    [cvo_type]             CHAR (3)     NULL,
+    [link]                 INT          NOT NULL,
+    [affi_udf1]            CHAR (25)    NULL,
+    [affi_udf2]            CHAR (25)    NULL,
+    [affi_udf3]            CHAR (25)    NULL,
+    [affi_udf4]            CHAR (25)    NULL,
+    [affi_udf5]            CHAR (25)    NULL,
+    [affi_udf6]            CHAR (25)    NULL,
+    [affi_udf1v]           CHAR (10)    NULL,
+    [affi_udf2v]           CHAR (10)    NULL,
+    [affi_udf3v]           CHAR (10)    NULL,
+    [affi_udf4v]           CHAR (10)    NULL,
+    [affi_udf5v]           CHAR (10)    NULL,
+    [affi_udf6v]           CHAR (10)    NULL
+);
+

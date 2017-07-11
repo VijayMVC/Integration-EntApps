@@ -1,0 +1,253 @@
+USE [ApplicationIntegration]
+GO
+
+/****** Object:  StoredProcedure [dbo].[usp_LoadLMSSecurityRoles]    Script Date: 11/16/2016 16:16:02 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+
+CREATE        PROCEDURE [dbo].[usp_LoadLMSSecurityRoles] 
+AS
+
+/* 	Author: 	Reetika Singh
+	Date:		11/16/2016
+	Purpose:	Extracts LMS security roles from AD
+	Revision:	
+
+*/
+
+
+BEGIN
+
+SET NOCOUNT ON;
+SET XACT_ABORT ON;
+
+	BEGIN TRY
+	
+		BEGIN TRANSACTION;
+
+			--CREATE TABLE LMSSecurityRoles
+			--( Name nvarchar(255),
+			--  Email nvarchar(255),
+			--  Initials nvarchar(20),
+			--  GroupName nvarchar(255))
+
+			--DROP TABLE LMSSecurityGroup
+			--CREATE TABLE LMSSecurityGroup
+			--( Name nvarchar(max),
+			--  LDAPServer nvarchar(255),
+			--  GroupName nvarchar(255))
+
+
+
+			TRUNCATE TABLE LMSSecurityRoles 
+			TRUNCATE TABLE LMSSecurityGroup
+
+
+
+
+			DECLARE @GroupName varchar(200)
+
+			DECLARE LMSCursor CURSOR FOR
+						
+						SELECT name AS LDAPGroup 
+						FROM OPENQUERY(ADSI,' SELECT name 
+							FROM ''LDAP://maw-svrdc5/DC=maw,DC=medamerica,DC=local''
+							WHERE objectClass=''group'' 
+								AND name=''LMS*''')			
+						
+						FOR UPDATE
+
+				OPEN LMSCursor
+
+				FETCH NEXT FROM LMSCursor
+					INTO @GroupName
+
+				WHILE @@FETCH_STATUS = 0
+					BEGIN
+					
+						--Looping through LMS groups to extract people info
+						DECLARE @Query NVARCHAR(1024)
+					    
+						SET @Query = 'INSERT INTO LMSSecurityRoles
+							SELECT Name, mail, Initials,''' + @GroupName + ''' As GroupName 
+							FROM OPENQUERY(ADSI,''
+								SELECT Name, mail, Initials 
+								FROM ''''LDAP://maw-svrdc5/DC=maw,DC=medamerica,DC=local''''
+								WHERE objectClass=''''User'''' 
+									AND objectCategory=''''Person''''
+									AND memberof=''''CN=' + @GroupName + ',OU=Company - Administrative Groups,OU=Company,OU=MEDAMERICA,DC=maw,DC=medamerica,DC=local''''
+								   '') ORDER BY name'
+			    
+						 --PRINT @Query
+						 
+						 EXEC SP_EXECUTESQL @Query
+						 
+						 
+						  SET @Query = 'INSERT INTO LMSSecurityRoles
+							SELECT Name, mail, Initials,''' + @GroupName + ''' As GroupName 
+							FROM OPENQUERY(ADSI,''
+								SELECT Name, mail, Initials 
+								FROM ''''LDAP://mbsi-srvad02/OU=Nth-Office,OU=MBSI,DC=mbsi,DC=medamerica,DC=local''''
+								WHERE objectClass=''''User'''' 
+									AND objectCategory=''''Person''''
+									AND memberof=''''CN=' + @GroupName + ',OU=Company - Administrative Groups,OU=Company,OU=MEDAMERICA,DC=maw,DC=medamerica,DC=local''''
+								   '') ORDER BY name'
+			    
+						 --PRINT @Query
+						 
+						EXEC SP_EXECUTESQL @Query
+						
+						
+						
+						--Looping through LMS groups to extract group info
+							    
+						SET @Query = 'INSERT INTO LMSSecurityGroup 
+							SELECT *, NULL, ''' + @GroupName + ''' As GroupName
+							FROM OPENQUERY(ADSI,''
+								SELECT *
+								FROM ''''LDAP://maw-svrdc5/DC=maw,DC=medamerica,DC=local''''
+								WHERE objectClass=''''Group'''' 
+									AND memberof=''''CN=' + @GroupName + ',OU=Company - Administrative Groups,OU=Company,OU=MEDAMERICA,DC=maw,DC=medamerica,DC=local''''
+								   '')'
+			    
+						 --PRINT @Query
+						 
+						 EXEC SP_EXECUTESQL @Query
+						 
+						 
+						  SET @Query = 'INSERT INTO LMSSecurityGroup
+							SELECT *, NULL, ''' + @GroupName + ''' As GroupName
+							FROM OPENQUERY(ADSI,''
+								SELECT * 
+								FROM ''''LDAP://mbsi-srvad02/OU=Nth-Office,OU=MBSI,DC=mbsi,DC=medamerica,DC=local''''
+								WHERE objectClass=''''Group'''' 
+									AND memberof=''''CN=' + @GroupName + ',OU=Company - Administrative Groups,OU=Company,OU=MEDAMERICA,DC=maw,DC=medamerica,DC=local''''
+								   '')'
+			    
+						 --PRINT @Query
+						 
+						EXEC SP_EXECUTESQL @Query
+						
+						
+
+						FETCH NEXT FROM LMSCursor
+							INTO 	@GroupName	
+					END
+
+				CLOSE LMSCursor
+				DEALLOCATE LMSCursor
+
+
+
+
+			UPDATE LMSSecurityGroup
+			SET LDAPServer = REPLACE(LEFT(Name, CHARINDEX('CN=', Name)-2), 'LDAP://', ''),
+			Name = RIGHT(Name, Len(Name) - CHARINDEX('CN=', Name)+1)
+
+
+			--Round 2 Extract user names from the Groups that were in LMS Security groups
+
+			DECLARE @SecGroupName varchar(200), 
+					@LMSGroup varchar(200), 
+					@LDAPServer varchar(200)
+
+			DECLARE LMSCursor CURSOR FOR
+						
+						SELECT Name, LDAPServer, GroupName FROM LMSSecurityGroup	
+						
+						FOR UPDATE
+
+				OPEN LMSCursor
+
+				FETCH NEXT FROM LMSCursor
+					INTO @SecGroupName, @LDAPServer, @LMSGroup
+
+				WHILE @@FETCH_STATUS = 0
+					BEGIN
+					
+						--Looping through LMS groups to extract people info
+						DECLARE @QuerySec NVARCHAR(1024)
+					    
+						IF(@LDAPServer like '%maw%')		    
+						BEGIN
+							SET @QuerySec = 'INSERT INTO LMSSecurityRoles
+								SELECT Name, mail, Initials,''' + @LMSGroup + ''' As GroupName 
+								FROM OPENQUERY(ADSI,''
+									SELECT Name, mail, Initials 
+									FROM ''''LDAP://maw-svrdc5/DC=maw,DC=medamerica,DC=local''''
+									WHERE objectClass=''''User'''' 
+										AND objectCategory=''''Person''''
+										AND memberof=''''' + @SecGroupName + '''''
+									   '') ORDER BY name'
+				    
+							 --PRINT @QuerySec
+							 
+							 EXEC SP_EXECUTESQL @QuerySec
+						 END
+						 
+						 
+						 IF(@LDAPServer = '%mbsi%')		    
+						 BEGIN
+							 SET @QuerySec = 'INSERT INTO LMSSecurityRoles
+								SELECT Name, mail, Initials,''' + @LMSGroup + ''' As GroupName 
+								FROM OPENQUERY(ADSI,''
+									SELECT Name, mail, Initials 
+									FROM ''''LDAP://mbsi-srvad02/OU=Nth-Office,OU=MBSI,DC=mbsi,DC=medamerica,DC=local''''
+									WHERE objectClass=''''User'''' 
+										AND objectCategory=''''Person''''
+										AND memberof=''''' + @SecGroupName + '''''
+									   '') ORDER BY name'
+				    
+							 --PRINT @QuerySec
+							 
+							 EXEC SP_EXECUTESQL @QuerySec
+						END
+						
+						
+						
+
+						FETCH NEXT FROM LMSCursor
+							INTO  @SecGroupName, @LDAPServer, @LMSGroup	
+					END
+
+				CLOSE LMSCursor
+				DEALLOCATE LMSCursor
+
+
+
+
+--SELECT * FROM LMSSecurityRoles
+--ORDER BY GroupName
+
+
+	
+	
+		COMMIT TRANSACTION;
+		
+	END TRY
+	
+	BEGIN CATCH
+		IF (XACT_STATE()) = -1
+			ROLLBACK TRANSACTION;
+
+		-- test if the transaction is committable
+		IF (XACT_STATE()) = 1
+			COMMIT TRANSACTION;
+
+	END CATCH;
+
+	
+	
+
+END
+
+
+
+GO
+
+

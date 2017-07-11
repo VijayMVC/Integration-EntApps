@@ -1,0 +1,28 @@
+﻿CREATE TABLE [dbo].[LawsonMedAmericaChanges] (
+    [Provider_action]  VARCHAR (100) NULL,
+    [effective_date]   VARCHAR (30)  NULL,
+    [end_date]         VARCHAR (30)  NULL,
+    [provider_name]    VARCHAR (100) NULL,
+    [lawson_id]        INT           NOT NULL,
+    [pos_level]        SMALLINT      NOT NULL,
+    [current_site]     VARCHAR (100) NULL,
+    [current_site_id]  VARCHAR (10)  NOT NULL,
+    [current_position] VARCHAR (50)  NULL,
+    [prev_position]    VARCHAR (50)  NULL,
+    [current_status]   VARCHAR (30)  NULL,
+    [prev_status]      VARCHAR (30)  NULL,
+    [current_rate]     VARCHAR (15)  NULL,
+    [prev_pay_rate]    VARCHAR (15)  NULL,
+    [reason_01]        VARCHAR (50)  NULL,
+    [reason_02]        VARCHAR (50)  NULL,
+    [emp_status_code]  VARCHAR (10)  NOT NULL,
+    [hired_date]       VARCHAR (30)  NULL,
+    [term_date]        VARCHAR (30)  NULL,
+    [processed_date]   VARCHAR (30)  NULL,
+    [ben_date_1]       VARCHAR (30)  NULL,
+    [ben_date_2]       VARCHAR (30)  NULL,
+    [prev_ben_date_2]  VARCHAR (30)  NOT NULL,
+    [firstPayDate]     VARCHAR (30)  NULL,
+    [creDate]          VARCHAR (75)  NULL
+);
+

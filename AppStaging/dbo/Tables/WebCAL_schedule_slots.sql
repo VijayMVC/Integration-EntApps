@@ -1,0 +1,28 @@
+﻿CREATE TABLE [dbo].[WebCAL_schedule_slots] (
+    [id]          INT        NOT NULL,
+    [uid]         CHAR (10)  NULL,
+    [uid_N]       CHAR (10)  NULL,
+    [type]        CHAR (4)   NULL,
+    [date]        DATETIME   NULL,
+    [site]        CHAR (10)  NULL,
+    [isFTK]       CHAR (1)   NULL,
+    [flag]        CHAR (1)   NULL,
+    [flagWknd]    CHAR (1)   NULL,
+    [isClinic]    CHAR (1)   NOT NULL,
+    [timestart]   FLOAT (53) NULL,
+    [timestart_N] FLOAT (53) NULL,
+    [timeend]     FLOAT (53) NULL,
+    [timeend_N]   FLOAT (53) NULL,
+    [hourNum]     FLOAT (53) NULL,
+    [timeStamp]   DATETIME   NULL,
+    [modifierID]  CHAR (10)  NULL,
+    [TSapprove]   DATETIME   NULL,
+    [approverID]  CHAR (10)  NULL,
+    [isApprove]   CHAR (1)   NULL,
+    [isLock]      CHAR (1)   NOT NULL,
+    [isHide]      CHAR (1)   NULL,
+    [TSbatchupd]  DATETIME   NULL,
+    [WeekendFlag] CHAR (1)   CONSTRAINT [DF_WebCAL_schedule_slots_WeekendFlag] DEFAULT ('N') NULL,
+    [TrueRate]    FLOAT (53) NULL
+);
+

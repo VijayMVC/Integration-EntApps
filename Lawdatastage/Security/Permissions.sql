@@ -1,0 +1,18 @@
+﻿GRANT CONNECT TO [LawsonLinks];
+
+
+GO
+GRANT CONNECT TO [LawsonAdmin];
+
+
+GO
+GRANT CONNECT TO [LBIAdmin];
+
+
+GO
+GRANT CONNECT TO [MEDAMERICA\AzerkiC];
+
+
+GO
+GRANT CONNECT TO [MEDAMERICA\Lawson];
+

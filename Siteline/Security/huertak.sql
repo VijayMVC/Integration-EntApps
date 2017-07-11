@@ -1,0 +1,3 @@
+﻿CREATE USER [huertak] FOR LOGIN [MEDAMERICA\HuertaK]
+    WITH DEFAULT_SCHEMA = [huertak];
+

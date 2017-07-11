@@ -1,0 +1,3 @@
+﻿CREATE USER [AaseK]
+    WITH DEFAULT_SCHEMA = [AaseK];
+

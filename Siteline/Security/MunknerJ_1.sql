@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [MunknerJ]
+    AUTHORIZATION [MunknerJ];
+

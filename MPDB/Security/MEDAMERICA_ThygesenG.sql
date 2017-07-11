@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [MEDAMERICA\ThygesenG]
+    FROM WINDOWS WITH DEFAULT_LANGUAGE = [us_english];
+

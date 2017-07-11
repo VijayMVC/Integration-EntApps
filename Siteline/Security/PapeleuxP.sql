@@ -1,0 +1,3 @@
+﻿CREATE USER [PapeleuxP] FOR LOGIN [MEDAMERICA\PapeleuxP]
+    WITH DEFAULT_SCHEMA = [PapeleuxP];
+

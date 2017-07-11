@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [MEDAMERICA\MogilevetsO]
+    AUTHORIZATION [MEDAMERICA\MogilevetsO];
+

@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [WinzerI]
+    AUTHORIZATION [WinzerI];
+

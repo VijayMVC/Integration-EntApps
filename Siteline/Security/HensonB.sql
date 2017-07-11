@@ -1,0 +1,3 @@
+﻿CREATE USER [HensonB] FOR LOGIN [MBSI\HensonB]
+    WITH DEFAULT_SCHEMA = [HensonB];
+

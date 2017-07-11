@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [UserNCs]
+    AUTHORIZATION [UserNCs];
+

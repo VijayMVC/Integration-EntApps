@@ -1,0 +1,3 @@
+﻿CREATE USER [BurgessR] FOR LOGIN [MEDAMERICA\BurgessR]
+    WITH DEFAULT_SCHEMA = [BurgessR];
+

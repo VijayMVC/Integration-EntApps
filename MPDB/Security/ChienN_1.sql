@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [ChienN]
+    AUTHORIZATION [ChienN];
+

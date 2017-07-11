@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [RinerM]
+    AUTHORIZATION [RinerM];
+

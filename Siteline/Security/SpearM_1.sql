@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [SpearM]
+    AUTHORIZATION [SpearM];
+

@@ -1,0 +1,3 @@
+﻿CREATE USER [GameroO]
+    WITH DEFAULT_SCHEMA = [GameroO];
+

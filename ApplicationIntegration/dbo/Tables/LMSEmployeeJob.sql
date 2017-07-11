@@ -1,0 +1,8 @@
+﻿CREATE TABLE [dbo].[LMSEmployeeJob] (
+    [EMP_No]     INT           NOT NULL,
+    [JOB_CODE]   VARCHAR (100) NULL,
+    [JOIN_DATE]  SMALLDATETIME NULL,
+    [PRIMARY]    INT           NULL,
+    [JOB_DOMAIN] VARCHAR (20)  CONSTRAINT [DF_LMSEmployeeJob_JOB_DOMAIN] DEFAULT ('CEP America') NOT NULL
+);
+

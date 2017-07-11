@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [SpiroM]
+    AUTHORIZATION [SpiroM];
+

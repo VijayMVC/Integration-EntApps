@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [SwartzB]
+    AUTHORIZATION [SwartzB];
+

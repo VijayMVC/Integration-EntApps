@@ -1,0 +1,3 @@
+﻿CREATE USER [HsienJ]
+    WITH DEFAULT_SCHEMA = [HsienJ];
+

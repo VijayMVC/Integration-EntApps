@@ -1,0 +1,182 @@
+USE [ApplicationIntegration]
+GO
+
+/****** Object:  StoredProcedure [dbo].[usp_LoadLMSExceptions]    Script Date: 11/08/2016 13:19:29 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+
+CREATE        PROCEDURE [dbo].[usp_LoadLMSExceptions] 
+AS
+
+/* 	Author: 	Reetika Singh
+	Date:		11/8/2016
+	Purpose:	
+	Revision:	
+
+*/
+
+
+BEGIN
+
+SET NOCOUNT ON;
+SET XACT_ABORT ON;
+
+	BEGIN TRY
+	
+		BEGIN TRANSACTION;
+
+
+		TRUNCATE TABLE LMSExceptions
+		
+		INSERT INTO LMSExceptions
+			SELECT * 
+			FROM (
+				SELECT 'CEP Provider' PersonType,
+					PMB.ProviderMasterID,
+					COALESCE(LID.LawsonEmpNo, NULL, '') LawsonID, 
+					PMB.StaffGroup1, 
+					PMB.LastName, 
+					PMB.FirstName, 
+					PMB.CEPEmail EmailAddress, 
+					PMB.HireDate,
+					COALESCE(SB.WebCode, NULL, '') WebCode, 
+					PM.StaffStatus, 
+					PM.PartnershipLevel,
+					PMB.[Status],		
+					COALESCE(SB.HospitalName, NULL, '') HospitalName,
+					CASE WHEN WebCode IS NULL
+							THEN 'Missing Site'
+						WHEN PM.StaffStatus = 'Applicant' AND PMB.HireDate > GetDate() AND ExchangeDirectoryName IS NULL
+							THEN 'New Hire, email not in AD yet' 
+						WHEN PM.StaffStatus = 'Applicant' AND PMB.HireDate > GetDate() AND ExchangeDirectoryName IS NOT NULL
+							THEN 'New Hire' 
+						WHEN ExchangeDirectoryName IS NULL
+							THEN 'Missing email' END AS ReasonNotLoaded	,
+				   GETDATE() CreDate		
+				FROM ProviderMasterBase PMB
+				JOIN ProviderMaster PM ON PMB.ProviderMasterID = PM.ProviderMasterID
+				LEFT OUTER JOIN (SELECT * FROM SiteBase
+								WHERE PrimarySite = 'Y'
+								) SB ON SB.ProviderMasterID = PMB.ProviderMasterID
+				LEFT OUTER JOIN LMSOrg LO ON LO.ORG_CODE = SB.WebCode
+				LEFT OUTER JOIN RehireStaging RS ON RS.ProviderMasterID = PMB.ProviderMasterID
+				LEFT OUTER JOIN LawsonIDMatch LID ON LID.ProviderMasterID = PMB.ProviderMasterID
+				WHERE Status IN (0,2)
+					AND PMB.ProviderMasterID NOT IN (SELECT EMP_NO FROM LMSEmployee)
+					AND PartnershipLevel NOT IN ('Locum Tenen')
+					--AND PM.StaffStatus <> 'Suspended'
+
+				UNION
+
+				SELECT	'Employee' PersonType,
+						PMB.ProviderMasterID, 
+						PMB.LawsonID, 
+						PMB.StaffGroup1, 
+						PMB.LastName, 
+						PMB.FirstName, 
+						PMB.EmailAddress, 
+						PMB.HireDate,
+						COALESCE(SB.WebCode, NULL, '') WebCode, 
+						'' StaffStatus,
+						'' PartnershipLevel,
+						PMB.[Status],
+						COALESCE(SB.HospitalName, NULL, '') HospitalName,
+						CASE WHEN PMB.EmailAddress IS NULL OR PMB.EmailAddress = ''
+								THEN 'Missing Email'
+							WHEN SB.WebCode IS NULL 
+								THEN 'Missing Affiliation'
+						END AS ReasonForNotinLMS,
+						GETDATE() CreDate
+				FROM EmployeeBase PMB
+				JOIN ProviderMaster PM ON PMB.ProviderMasterID = PM.ProviderMasterID
+				JOIN AppStaging.dbo.LawsonEMPLOYEE LE ON LE.EMPLOYEE = PMB.LawsonID
+				LEFT OUTER JOIN (SELECT * 
+								FROM EmployeeSiteBase
+								WHERE PrimarySite = 'Y'
+								) SB ON SB.ProviderMasterID = PMB.ProviderMasterID
+				LEFT OUTER JOIN LMSOrg LO ON LO.ORG_CODE = SB.WebCode
+				LEFT OUTER JOIN ExchangeDataImportEmployee ED ON ED.LastName = PMB.LastName
+										AND ED.FirstName = PMB.FirstName
+										AND ISNUMERIC(ipphone) =1
+										AND Convert(int,ED.ipphone) = PMB.LawsonID
+				WHERE Status IN (0,2)
+					AND PMB.ProviderMasterID NOT IN (SELECT EMP_NO FROM LMSEmployee)
+					AND EMP_STATUS NOT LIKE 'T%') T
+			ORDER BY StaffGroup1
+
+		
+		--SELECT * FROM LMSExceptions
+		--email attachments to Mina
+
+		
+				
+		DECLARE @tableHTML  NVARCHAR(MAX) ;  
+  
+		SET @tableHTML =  
+			N'<H2>LMS Exceptions Report</H2>' + 
+			N'<table border="1">' +  
+			N'<tr><th>PersonType</th><th>ProviderMasterID</th>' +  
+			N'<th>LawsonID</th><th>StaffGroup</th><th>LastName</th>' +
+			N'<th>FirstName</th><th>EmailAddress</th><th>HireDate</th>' +  
+			N'<th>WebCode</th><th>StaffStatus</th><th>PartnershipLevel</th>' +
+			N'<th>Status</th><th>HospitalName</th><th>ReasonNotLoaded</th>' +
+			N'<th>CreateDate</th></tr>' +  
+			CAST ( ( SELECT td = LE.PersonType,       '',  
+							td = LE.ProviderMasterID, '',  
+							td = LE.LawsonID, '',  
+							td = LE.StaffGroup1, '',  
+							td = Le.LastName, '',
+							td = LE.FirstName, '',  
+							td = LE.EmailAddress, '',  
+							td = LE.HireDate, '',  
+							td = LE.WebCode, '',
+							td = LE.StaffStatus, '',  
+							td = LE.PartnershipLevel, '',  
+							td = LE.[Status], '',  
+							td = LE.HospitalName, '',
+							td = LE.ReasonNotLoaded, '',  
+							td = LE.CreDate, ''
+					  FROM LMSExceptions LE
+					  ORDER BY PersonType  
+					  FOR XML PATH('tr'), TYPE   
+			) AS NVARCHAR(MAX) ) +  
+			N'</table>' ;  
+		  
+		EXEC msdb.dbo.sp_send_dbmail 
+			@recipients='singhr@medamerica.com;millerm@medamerica.com',  
+			@subject=N'LMSExceptions',  
+			@body = @tableHTML,  
+			@body_format = 'HTML';
+			
+		
+		
+	
+		COMMIT TRANSACTION;
+		
+	END TRY
+	
+	BEGIN CATCH
+		IF (XACT_STATE()) = -1
+			ROLLBACK TRANSACTION;
+
+		-- test if the transaction is committable
+		IF (XACT_STATE()) = 1
+			COMMIT TRANSACTION;
+
+	END CATCH;
+
+	
+	
+
+END
+
+
+
+GO
+
+

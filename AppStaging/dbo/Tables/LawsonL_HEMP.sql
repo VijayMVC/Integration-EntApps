@@ -1,0 +1,15 @@
+﻿CREATE TABLE [dbo].[LawsonL_HEMP] (
+    [FILENAME] CHAR (30)   NOT NULL,
+    [L_INDEX]  CHAR (4)    NOT NULL,
+    [ATCHNBR]  CHAR (2)    NOT NULL,
+    [NAME]     CHAR (50)   NOT NULL,
+    [TYPE]     CHAR (1)    NOT NULL,
+    [CRTDATE]  DATETIME    NOT NULL,
+    [CRTTIME]  DECIMAL (6) NOT NULL,
+    [MODDATE]  DATETIME    NOT NULL,
+    [MODTIME]  DECIMAL (6) NOT NULL,
+    [R_SIZE]   INT         NOT NULL,
+    [HEADSIZE] SMALLINT    NOT NULL,
+    [OBJECT]   CHAR (512)  NOT NULL
+);
+

@@ -1,0 +1,28 @@
+﻿CREATE TABLE [dbo].[PendingContractsArchive] (
+    [LastName]             VARCHAR (100) NULL,
+    [FirstName]            VARCHAR (100) NULL,
+    [Title]                VARCHAR (100) NULL,
+    [RecordStatus]         VARCHAR (200) NULL,
+    [FromDate]             DATETIME      NULL,
+    [PayerName]            VARCHAR (200) NULL,
+    [SiteName]             VARCHAR (200) NULL,
+    [PracticeLocation]     VARCHAR (50)  NULL,
+    [MailedToProvider]     DATETIME      NULL,
+    [ReceivedFromProvider] DATETIME      NULL,
+    [MailedToPayer]        DATETIME      NULL,
+    [PayerReferenceNumber] VARCHAR (100) NULL,
+    [FollowUpDate]         DATETIME      NULL,
+    [FirstDateWorked]      DATETIME      NULL,
+    [ProviderMasterID]     INT           NULL,
+    [PESpecialist]         VARCHAR (100) NULL,
+    [Status]               VARCHAR (100) NULL,
+    [Site1FirstWorked]     VARCHAR (100) NULL,
+    [Site2FirstWorked]     VARCHAR (100) NULL,
+    [Site3FirstWorked]     VARCHAR (100) NULL,
+    [Site4FirstWorked]     VARCHAR (100) NULL,
+    [Site5FirstWorked]     VARCHAR (100) NULL,
+    [Site6FirstWorked]     VARCHAR (100) NULL,
+    [Site7FirstWorked]     VARCHAR (100) NULL,
+    [Site8FirstWorked]     VARCHAR (100) NULL
+);
+

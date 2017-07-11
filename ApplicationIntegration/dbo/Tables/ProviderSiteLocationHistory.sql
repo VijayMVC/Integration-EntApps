@@ -1,0 +1,28 @@
+﻿CREATE TABLE [dbo].[ProviderSiteLocationHistory] (
+    [PSLH_ID]                     INT           NOT NULL,
+    [ProviderMasterID]            INT           NOT NULL,
+    [SiteLocationID]              INT           NULL,
+    [StaffGroup]                  VARCHAR (50)  NULL,
+    [SiteLocationName]            VARCHAR (100) NULL,
+    [RegionID]                    INT           NULL,
+    [RegionName]                  VARCHAR (100) NULL,
+    [ProviderSiteDatesEchoID]     INT           NULL,
+    [EchoListOrder]               INT           NULL,
+    [EchoStartDate]               DATETIME      NULL,
+    [EchoEndDate]                 DATETIME      NULL,
+    [EchoActiveFlag]              CHAR (1)      NULL,
+    [EchoFlag]                    CHAR (1)      NULL,
+    [ProviderSiteDatesCeridianID] INT           NULL,
+    [FirstWorkedDate]             DATETIME      NULL,
+    [LastWorkedDate]              DATETIME      NULL,
+    [CeridianFlag]                CHAR (1)      NULL,
+    [ProviderSiteDatesPMDBID]     INT           NULL,
+    [PMDBListOrder]               INT           NULL,
+    [PMDBAddDate]                 DATETIME      NULL,
+    [PMDBDropDate]                DATETIME      NULL,
+    [PMDBFlag]                    CHAR (1)      NULL,
+    [ActiveFlag]                  CHAR (1)      NULL,
+    [CreDate]                     DATETIME      NULL,
+    [UpdDate]                     DATETIME      NULL
+);
+

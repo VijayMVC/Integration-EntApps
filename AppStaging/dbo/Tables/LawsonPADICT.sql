@@ -1,0 +1,28 @@
+﻿CREATE TABLE [dbo].[LawsonPADICT] (
+    [FLD_NBR]        SMALLINT  NOT NULL,
+    [TOPIC]          CHAR (2)  NOT NULL,
+    [ITEM_NAME]      CHAR (20) NOT NULL,
+    [DATA_TYPE]      CHAR (1)  NOT NULL,
+    [HEADING_01]     CHAR (15) NOT NULL,
+    [HEADING_02]     CHAR (15) NOT NULL,
+    [DB_FILE]        CHAR (3)  NOT NULL,
+    [R_SIZE]         SMALLINT  NOT NULL,
+    [DECIMALS]       TINYINT   NOT NULL,
+    [REQ_KEY]        CHAR (1)  NOT NULL,
+    [PERS_ACTION]    CHAR (1)  NOT NULL,
+    [PERS_GRP]       CHAR (1)  NOT NULL,
+    [HEADER_SIZE]    SMALLINT  NOT NULL,
+    [MIN_SIZE]       SMALLINT  NOT NULL,
+    [CMP_FIELD]      CHAR (1)  NOT NULL,
+    [PRT_TYPE]       CHAR (1)  NOT NULL,
+    [CURRENCY_FLAG]  CHAR (1)  NOT NULL,
+    [LOG_AVAIL_FLAG] CHAR (1)  NOT NULL,
+    [REQ_AVAIL_FLAG] CHAR (1)  NOT NULL,
+    [DFL_AVAIL_FLAG] CHAR (1)  NOT NULL,
+    [SETUP_FLAG]     CHAR (1)  NOT NULL,
+    [TOPIC_FLAG]     CHAR (1)  NOT NULL,
+    [CASE_FLAG]      CHAR (1)  NOT NULL,
+    [DELIVERED]      CHAR (1)  NOT NULL,
+    [COLUMN_HEADING] CHAR (40) NOT NULL
+);
+

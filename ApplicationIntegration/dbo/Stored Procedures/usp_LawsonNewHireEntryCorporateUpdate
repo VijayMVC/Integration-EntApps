@@ -1,0 +1,93 @@
+USE [ApplicationIntegration]
+GO
+/****** Object:  StoredProcedure [dbo].[usp_LawsonNewHireEntryCorporateSFDCUpdate]    Script Date: 08/23/2016 16:58:05 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+
+
+
+ALTER                      PROCEDURE [dbo].[usp_LawsonNewHireEntryCorporateUpdate] 
+AS
+
+/* 	Author: 	Reetika Singh
+	Date:		12/15/2010
+	Purpose:	
+	Revision:	Populations: MA/MBSI
+				Date Source: Lawson
+				Matching Key: SSN
+				Should be hired in SFDC, SSN should match with SSN in Lawson and should have been hired in Lawson too
+				
+				Update Email Address to corporate email and Address to Corporate address and update MPID in SFDC
+
+				
+
+*/
+--SET QUOTED_IDENTIFIER OFF 
+--SET ANSI_NULLS OFF 
+
+BEGIN
+
+  SET NOCOUNT ON;
+SET XACT_ABORT ON;
+	BEGIN TRY
+		BEGIN TRANSACTION;	
+
+		
+		
+		
+		UPDATE Salesforce...Contact 
+		SET Email = EB.EmailAddress,
+		Provider_Master_ID__c = EB.ProviderMasterID
+		FROM AppStaging.dbo.LawsonEMPLOYEE LE 
+		JOIN EmployeeBase EB ON EB.LawsonID = LE.EMPLOYEE
+		WHERE LTRIM(RTRIM(REPLACE(FICA_NBR, '-', ''))) = LTRIM(RTRIM(Contact.ts2__Social_Security__c))
+		AND Employee_Type__c IN ('MA', 'MBSI')
+		AND Contact.ts2__People_Status__c = 'Hired'
+		--AND Contact.Provider_Master_ID__c <> EB.ProviderMasterID
+
+
+
+
+
+		UPDATE Salesforce...Contact 
+		SET MailingCity = A.BillingCity,
+		MailingCountry = A.BillingCountry,
+		MailingState = A.BillingState,
+		MailingStreet = A.BillingStreet,
+		MailingPostalCode = A.BillingPostalCode
+		FROM SalesForce.dbo.Account A
+		WHERE A.Id = Contact.AccountId
+		AND Employee_Type__c IN ('MA', 'MBSI')
+		AND Contact.ts2__People_Status__c = 'Hired'
+		AND Contact.MailingStreet <> A.BillingStreet
+				
+				
+				
+				
+
+
+
+		COMMIT TRANSACTION;
+	END TRY
+	BEGIN CATCH
+		IF (XACT_STATE()) = -1
+			ROLLBACK TRANSACTION;
+		
+		-- test if the transaction is committable
+		IF (XACT_STATE()) = 1
+			COMMIT TRANSACTION;   
+    
+		
+END CATCH;
+
+
+END
+
+
+
+
+

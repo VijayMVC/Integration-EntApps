@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [MEDAMERICA\sqlservices]
+    FROM WINDOWS WITH DEFAULT_LANGUAGE = [us_english];
+

@@ -1,0 +1,3 @@
+﻿CREATE USER [BucadL] FOR LOGIN [MEDAMERICA\BucadL]
+    WITH DEFAULT_SCHEMA = [BucadL];
+

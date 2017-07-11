@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [GameroO]
+    AUTHORIZATION [GameroO];
+

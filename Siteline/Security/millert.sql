@@ -1,0 +1,3 @@
+﻿CREATE USER [millert] FOR LOGIN [MEDAMERICA\MillerM]
+    WITH DEFAULT_SCHEMA = [millert];
+

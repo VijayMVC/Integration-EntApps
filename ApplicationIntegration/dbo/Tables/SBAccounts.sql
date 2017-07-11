@@ -1,0 +1,25 @@
+﻿CREATE TABLE [dbo].[SBAccounts] (
+    [Id]                  NCHAR (18)     NOT NULL,
+    [AHA_id__c]           NVARCHAR (10)  NULL,
+    [SBName]              NVARCHAR (255) NOT NULL,
+    [SBPhone]             NVARCHAR (40)  NULL,
+    [SBFax]               NVARCHAR (40)  NULL,
+    [SBBillingStreet]     NVARCHAR (255) NULL,
+    [SBBillingCity]       NVARCHAR (40)  NULL,
+    [SBBillingState]      NVARCHAR (80)  NULL,
+    [SBBillingPostalCode] NVARCHAR (20)  NULL,
+    [SBMedicare_ID__c]    NVARCHAR (255) NULL,
+    [SBCounty]            NVARCHAR (255) NULL,
+    [SBLicensedBeds]      DECIMAL (18)   NULL,
+    [SBStaffedBeds]       DECIMAL (18)   NULL,
+    [SBEDVisits]          DECIMAL (18)   NULL,
+    [SBTotalAdmissions]   DECIMAL (18)   NULL,
+    [SBTeaching]          NVARCHAR (255) NULL,
+    [SBDepartment]        NVARCHAR (255) NULL,
+    [SBWebsite]           NVARCHAR (255) NULL,
+    [SBDataSource]        NVARCHAR (255) NULL,
+    [SBService]           NVARCHAR (255) NULL,
+    [SBLocation]          NVARCHAR (255) NULL,
+    [SBOwnership]         NVARCHAR (40)  NULL
+);
+

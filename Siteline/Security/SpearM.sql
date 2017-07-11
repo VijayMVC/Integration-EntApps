@@ -1,0 +1,3 @@
+﻿CREATE USER [SpearM] FOR LOGIN [MEDAMERICA\SpearM]
+    WITH DEFAULT_SCHEMA = [SpearM];
+

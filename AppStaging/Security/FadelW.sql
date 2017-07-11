@@ -1,0 +1,3 @@
+﻿CREATE USER [FadelW]
+    WITH DEFAULT_SCHEMA = [FadelW];
+

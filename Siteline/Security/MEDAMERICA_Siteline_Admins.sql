@@ -1,0 +1,2 @@
+﻿CREATE USER [MEDAMERICA\Siteline_Admins] FOR LOGIN [MEDAMERICA\Siteline_Admins];
+

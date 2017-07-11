@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [SearF]
+    AUTHORIZATION [SearF];
+

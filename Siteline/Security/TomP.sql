@@ -1,0 +1,3 @@
+﻿CREATE USER [TomP] FOR LOGIN [MEDAMERICA\PrenticeTom]
+    WITH DEFAULT_SCHEMA = [TomP];
+

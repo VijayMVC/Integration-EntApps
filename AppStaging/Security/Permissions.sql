@@ -1,0 +1,46 @@
+﻿GRANT CONNECT TO [SwartzB];
+
+
+GO
+GRANT CONNECT TO [PayrollTS];
+
+
+GO
+GRANT CONNECT TO [SinghR];
+
+
+GO
+GRANT CONNECT TO [SqlServices];
+
+
+GO
+GRANT CONNECT TO [citrix];
+
+
+GO
+GRANT CONNECT TO [Customizer];
+
+
+GO
+GRANT CONNECT TO [Developer];
+
+
+GO
+GRANT CONNECT TO [FadelW];
+
+
+GO
+GRANT CONNECT TO [MEDAMERICA\RafaelR];
+
+
+GO
+GRANT CONNECT TO [MEDAMERICA\SACDC-SVRLAWAPP$];
+
+
+GO
+GRANT CONNECT TO [MBSI\maskec];
+
+
+GO
+GRANT CONNECT TO [proffittj];
+

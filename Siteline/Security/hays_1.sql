@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [hays]
+    AUTHORIZATION [hays];
+

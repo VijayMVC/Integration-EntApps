@@ -1,0 +1,27 @@
+﻿CREATE TABLE [dbo].['George2010'] (
+    [ProviderMasterID] FLOAT (53)     NULL,
+    [LastName]         NVARCHAR (255) NULL,
+    [FirstName]        NVARCHAR (255) NULL,
+    [Title]            NVARCHAR (255) NULL,
+    [IncLineA]         NVARCHAR (255) NULL,
+    [IncLineB]         NVARCHAR (255) NULL,
+    [IncLineC]         FLOAT (53)     NULL,
+    [IncLineD]         FLOAT (53)     NULL,
+    [IncLineE]         NVARCHAR (255) NULL,
+    [IncLineF]         FLOAT (53)     NULL,
+    [IncLineG]         NVARCHAR (255) NULL,
+    [UnIncLineA]       FLOAT (53)     NULL,
+    [UnIncLineB]       FLOAT (53)     NULL,
+    [UnIncLineC]       FLOAT (53)     NULL,
+    [UnIncLineD]       FLOAT (53)     NULL,
+    [UnIncLineE]       FLOAT (53)     NULL,
+    [UnIncLineF]       FLOAT (53)     NULL,
+    [UnIncLineG]       FLOAT (53)     NULL,
+    [UnInclineH]       FLOAT (53)     NULL,
+    [UnIncLineI]       FLOAT (53)     NULL,
+    [DBLineA]          FLOAT (53)     NULL,
+    [DBLineB]          FLOAT (53)     NULL,
+    [DBLineC]          FLOAT (53)     NULL,
+    [DBLineD]          FLOAT (53)     NULL
+);
+

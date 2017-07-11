@@ -1,0 +1,3 @@
+﻿CREATE USER [EssmanK]
+    WITH DEFAULT_SCHEMA = [EssmanK];
+

@@ -1,0 +1,13 @@
+﻿CREATE TABLE [dbo].[tblChg] (
+    [ChgID]      INT      IDENTITY (1, 1) NOT NULL,
+    [Chg_CtrID]  INT      NULL,
+    [ChgSttDate] DATETIME NULL,
+    CONSTRAINT [PK_tblChg] PRIMARY KEY NONCLUSTERED ([ChgID] ASC) WITH (FILLFACTOR = 90),
+    CONSTRAINT [IX_tblChg_1] UNIQUE NONCLUSTERED ([Chg_CtrID] ASC, [ChgSttDate] ASC)
+);
+
+
+GO
+CREATE UNIQUE NONCLUSTERED INDEX [IX_tblChg]
+    ON [dbo].[tblChg]([Chg_CtrID] ASC, [ChgSttDate] ASC) WITH (FILLFACTOR = 90);
+

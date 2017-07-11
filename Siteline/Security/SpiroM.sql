@@ -1,0 +1,3 @@
+﻿CREATE USER [SpiroM] FOR LOGIN [MEDAMERICA\MarkSpiro]
+    WITH DEFAULT_SCHEMA = [SpiroM];
+

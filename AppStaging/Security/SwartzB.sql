@@ -1,0 +1,3 @@
+﻿CREATE USER [SwartzB]
+    WITH DEFAULT_SCHEMA = [SwartzB];
+

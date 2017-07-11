@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [KimD]
+    AUTHORIZATION [KimD];
+

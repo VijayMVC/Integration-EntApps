@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [DilalloK]
+    AUTHORIZATION [DilalloK];
+

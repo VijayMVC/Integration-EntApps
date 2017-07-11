@@ -1,0 +1,3 @@
+﻿CREATE USER [TruongD]
+    WITH DEFAULT_SCHEMA = [TruongD];
+

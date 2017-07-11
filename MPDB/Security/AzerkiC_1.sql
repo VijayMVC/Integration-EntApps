@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [AzerkiC]
+    AUTHORIZATION [AzerkiC];
+

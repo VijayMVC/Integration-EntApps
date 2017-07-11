@@ -1,0 +1,5 @@
+USE [MngCarDB]
+GO
+/****** Object:  User [MEDAMERICA\SpearM]    Script Date: 09/08/2016 10:06:57 ******/
+CREATE USER [MEDAMERICA\SpearM] FOR LOGIN [MEDAMERICA\SpearM] WITH DEFAULT_SCHEMA=[dbo]
+GO

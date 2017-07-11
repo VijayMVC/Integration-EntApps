@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [BrowneJ]
+    AUTHORIZATION [BrowneJ];
+

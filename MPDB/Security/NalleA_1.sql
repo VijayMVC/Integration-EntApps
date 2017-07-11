@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [NalleA]
+    AUTHORIZATION [NalleA];
+

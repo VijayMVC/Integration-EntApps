@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [PayrollTS]
+    AUTHORIZATION [PayrollTS];
+

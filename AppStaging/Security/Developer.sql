@@ -1,0 +1,3 @@
+﻿CREATE USER [Developer] WITHOUT LOGIN
+    WITH DEFAULT_SCHEMA = [Developer];
+
